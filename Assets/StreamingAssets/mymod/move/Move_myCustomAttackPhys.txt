@@ -1,0 +1,55 @@
+{
+  "Name": {
+    "Index": 0,
+    "Table": null
+  },
+  "Description": {
+    "Index": 0,
+    "Table": null
+  },
+  "FXPrefab": {
+    "MovePrefabName": "myCustomAttackPhysFX"
+  },
+  "DamageFXPrefab": {
+    "MovePrefabName": "myCustomAttackDamageFX"
+  },
+  "Type": {
+    "TypeName": "Class_Poison"
+  },
+  "Power": 20.0,
+  "BlessPower": 0.0,
+  "HitTimes": 1,
+  "CriticalChance": 1.0,
+  "Contact": false,
+  "RecoilAmount": 0.0,
+  "Grounded": false,
+  "UsagePoints": 10,
+  "MoveEffect": {
+    "MoveEffectBaseName": "MoveNormal"
+  },
+  "Category": 0,
+  "Target": 0,
+  "FogDistance": 0.0,
+  "FogColor": {
+    "r": 0.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 0.0
+  },
+  "EnvColor": {
+    "r": 0.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 0.0
+  },
+  "CamType": 0,
+  "AttackStateName": "wave",
+  "Effects": null,
+  "Secondaries": [],
+  "Accuracy": 100,
+  "Accurate": false,
+  "ModName": "mymod",
+  "IsCustom": false,
+  "name": "Move_myCustomAttackPhys",
+  "hideFlags": 0
+}

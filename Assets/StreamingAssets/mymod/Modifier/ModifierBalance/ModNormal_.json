@@ -1,0 +1,23 @@
+{
+  "Boost": [],
+  "Name": {
+    "Index": 0,
+    "Table": null
+  },
+  "Description": {
+    "Index": 0,
+    "Table": null
+  },
+  "DamageModifer": 1.0,
+  "OneUse": false,
+  "Color": {
+    "r": 0.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 0.0
+  },
+  "SpikesImmune": false,
+  "ModName": "mymod",
+  "name": "ModNormal_",
+  "hideFlags": 0
+}

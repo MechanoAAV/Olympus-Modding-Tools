@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a629b1d7241824c81c3005ae26ce29, type: 3}
+  m_Name: Class_Poison
+  m_EditorClassIdentifier: Assembly-CSharp::TypesSO
+  ModName: mymod
+  Name:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  Type: 0
+  IncomingAttackChart:
+  - type: 0
+    Multiplier: 1
+  - type: 1
+    Multiplier: 1.5
+  - type: 2
+    Multiplier: 0.5
+  - type: 3
+    Multiplier: 1
+  - type: 4
+    Multiplier: 1.5
+  - type: 5
+    Multiplier: 1
+  - type: 6
+    Multiplier: 0.5
+  - type: 7
+    Multiplier: 1
+  - type: 8
+    Multiplier: 1
+  - type: 9
+    Multiplier: 0.5
+  OutAttackChart:
+  - type: 0
+    Multiplier: 1
+  - type: 1
+    Multiplier: 1
+  - type: 2
+    Multiplier: 1.5
+  - type: 3
+    Multiplier: 1
+  - type: 4
+    Multiplier: 1.5
+  - type: 5
+    Multiplier: 0.5
+  - type: 6
+    Multiplier: 0.5
+  - type: 7
+    Multiplier: 1
+  - type: 8
+    Multiplier: 0
+  - type: 9
+    Multiplier: 0.5
+  Color: {r: 0.33746952, g: 0.20246501, b: 0.42318046, a: 1}
+  custom: 1
+  references:
+    version: 2
+    RefIds: []

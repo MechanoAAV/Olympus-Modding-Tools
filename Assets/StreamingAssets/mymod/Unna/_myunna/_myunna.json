@@ -1,0 +1,57 @@
+{
+  "Index": 200,
+  "Name": "myUnna",
+  "Typing": [],
+  "Ability": {
+    "AbilityName": "Ability_Generic"
+  },
+  "WeightClass": 0,
+  "Portrait": {
+    "SpriteName": "ui_Unknown"
+  },
+  "Size": 1.0,
+  "MaxHP": 82,
+  "Attack": 18,
+  "BlessPower": 21,
+  "Defense": 21,
+  "BlessRes": 16,
+  "Speed": 18,
+  "AssistMove": {
+    "MoveName": "Move_myCustomAttack"
+  },
+  "LearnableMoves": [
+    {
+      "MoveName": "Move_myCustomAttack"
+    }
+  ],
+  "Presets": [
+    {
+      "PresetName": "offens",
+      "UnnaPresetName": "myUnna",
+      "UnnaPresetModifier": "",
+      "UnnaPresetStats": [
+        4,
+        4,
+        0,
+        0,
+        0,
+        4
+      ],
+      "UnnaPresetMoves": [
+        "myCustomAttack",
+        "myCustomAttack",
+        "myCustomAttack"
+      ]
+    }
+  ],
+  "ModName": "mymod",
+  "GetBST": 176,
+  "GetHP": 82,
+  "Getattack": 18,
+  "Getdefense": 21,
+  "GetBlessPower": 21,
+  "GetBlessRes": 16,
+  "Getspeed": 18,
+  "name": "Unna_myUnna",
+  "hideFlags": 0
+}

@@ -1,0 +1,54 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.3.0f1
+CRC: 871290966
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f37e89d8aca02ae230d35c8e62c3089e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0549e5a6ee8d47563746cede3fc91d5d
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 4d78b0cc447fd159372b77a3e8134d88
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 096cc36044e14524cb845b40c5e77c0c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1c1a3f95760815d48b5b46790dad62b3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f17db56fa6fc9a2479c3c4f281812417, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 65baa7c1cc5799241882f0606f0ecb11, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.ArgumentCache
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentListenerMode
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.UnityEvent
+Assets:
+- Assets/MyMod/Moves/myCustomAttack/myCustomAttackDamageFX.prefab
+- Assets/MyMod/Moves/myCustomAttack/myCustomAttackFX.prefab
+- Assets/MyMod/Moves/myCustomAttackPhys/myCustomAttackDamageFX.prefab
+- Assets/MyMod/Moves/myCustomAttackPhys/myCustomAttackPhysFX.prefab
+Dependencies: []
