@@ -22,7 +22,7 @@ public class UnnaSO : ModAsset
     public string Name;
     //[SerializeField] LocalizedString description;
     public TypesSO[] Typing;
-    public AbilityBase Ability;
+    public AbilityBase[] Abilities;
     public GameMode WeightClass;
     public Sprite Portrait;
     public float Size = 1;
@@ -32,7 +32,7 @@ public class UnnaSO : ModAsset
     [Range(0, 150)] public int Defense;
     [Range(0, 150)] public int BlessRes;
     [Range(0, 150)] public int Speed;
-    public MoveSO AssistMove;
+    public MoveSO[] AssistMoves;
     public MoveSO[] LearnableMoves = new MoveSO[3];
     public List<UnnaPreset> Presets;
     public int GetBST => Attack + Defense + MaxHP + BlessPower + BlessRes + Speed;
