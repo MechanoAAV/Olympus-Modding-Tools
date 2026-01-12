@@ -140,6 +140,8 @@ public struct UnnaSaveData
 {
     public string name;
     public string modifier;
+    public int ability;
+    public int assist;
     public string[] learntMoves;
     public StatBoost[] StatReinforcement;
 }

@@ -138,6 +138,8 @@ public sealed class UnnaPresetJsonConverter : JsonConverter<UnnaPreset>
         (
             new JProperty("PresetName", string.Empty),
             new JProperty("UnnaPresetName", string.Empty),
+            new JProperty("UnnaPresetAbility", 0),
+            new JProperty("UnnaPresetAssist", 0),
             new JProperty("UnnaPresetModifier", string.Empty),
             new JProperty("UnnaPresetStats", new int[6]),
             new JProperty("UnnaPresetMoves", new List<string>())
@@ -169,6 +171,8 @@ public sealed class UnnaPresetJsonConverter : JsonConverter<UnnaPreset>
         (
             new JProperty("PresetName", value.Name),
             new JProperty("UnnaPresetName", value.Data.name),
+            new JProperty("UnnaPresetAbility", value.Data.ability),
+            new JProperty("UnnaPresetAssist", value.Data.assist),
             new JProperty("UnnaPresetModifier", value.Data.modifier),
             new JProperty("UnnaPresetStats", jobjectKeyValuePair),
             new JProperty("UnnaPresetMoves", value.Data.learntMoves)
