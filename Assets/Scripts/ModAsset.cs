@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Localization;
 using System;
 using System.Collections.Generic;
+using UnityEngine.Localization.Settings;
 
 public class ModAsset : ScriptableObject
 {
@@ -211,20 +212,51 @@ public class LocalizedStringJsonConverter : JsonConverter<LocalizedString>
     public override LocalizedString ReadJson(JsonReader reader, Type objectType, LocalizedString existingValue, bool hasExistingValue, JsonSerializer serializer)
     {
         JObject obj = JObject.Load(reader);
-        return new LocalizedString
-        (
-            obj.Value<string>("Table"),
-            obj.Value<long>("Index")
-        );
+        List<JObject> list = obj.Value<JToken>("LocalizData").ToObject<List<JObject>>();
+        LocalizedString result;
+        var tableRef = obj.Value<string>("TableReference");
+        var keyRef = obj.Value<string>("Key");
+        for (int i = 0; i < list.Count; i++)
+        {
+            Locale currentLocale = LocalizationSettings.AvailableLocales.GetLocale(new(list[i].Value<string>("Locale")));
+            var table = LocalizationSettings.Instance.GetStringDatabase().GetTable(tableRef, currentLocale);
+            var existingEntry = table.GetEntry(keyRef);
+            if (existingEntry != null)
+            {
+                return new
+                (
+                    tableRef,
+                    keyRef
+                );
+            }
+            else
+            {
+                Debug.Log($"Adding entry {keyRef} in {tableRef}");
+                var newEntry = table.AddEntry(keyRef, list[i].Value<string>("Value"));
+            }
+        }
+        result = new(tableRef, keyRef);
+        return result;
     }
     public override void WriteJson(JsonWriter writer, LocalizedString value, JsonSerializer serializer)
     {
-        JObject obj = new JObject
+        List<JObject> data = new();
+        for (int i = 0; i < LocalizationSettings.AvailableLocales.Locales.Count; i++)
+        {
+            value.LocaleOverride = LocalizationSettings.AvailableLocales.Locales[i];
+            JObject objEntry = new
                (
-                   new JProperty("Index", value.TableEntryReference.KeyId),
-                   new JProperty("Table", value.TableReference.TableCollectionName)
+                   new JProperty("Locale", LocalizationSettings.AvailableLocales.Locales[i].Identifier.Code),
+                   new JProperty("Value", value.GetLocalizedString())
                );
-
+            data.Add(objEntry);
+        }
+        JObject obj = new
+               (
+                   new JProperty("TableReference", value.TableReference.TableCollectionName),
+                   new JProperty("Key", value.TableEntryReference.ResolveKeyName(LocalizationSettings.Instance.GetStringDatabase().GetTable(value.TableReference.TableCollectionName).SharedData)),
+                   new JProperty("LocalizData", data)
+               );
         obj.WriteTo(writer);
     }
 }
