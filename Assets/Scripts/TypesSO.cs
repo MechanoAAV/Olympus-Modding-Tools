@@ -9,16 +9,14 @@ using UnityEngine.Serialization;
 [System.Serializable]
 public struct TypeTableEntry
 {
-    public UnnaTypes type;
+    public string type;
     public float Multiplier;
 }
 [CreateAssetMenu(fileName = "TypesSO", menuName = "Unna/Types")]
 public class TypesSO : ModAsset
 {
-    [FormerlySerializedAs("_name")] public LocalizedString Name;
-    [FormerlySerializedAs("_type")] public CustomUnnaTypes Type;
+    public LocalizedString Name;
     [Tooltip("If the attacker is...then the damage multiplier is...")]
-    [FormerlySerializedAs("_incomingAttackChart")]
     public List<TypeTableEntry> IncomingAttackChart = new();
     public List<TypeTableEntry> OutAttackChart = new();
     public Color Color;
@@ -41,28 +39,4 @@ public class TypesSO : ModAsset
         AssetDatabase.Refresh();
 #endif
     }
-}
-public enum CustomUnnaTypes
-{    
-    Custom1,
-    Custom2,
-    Custom3,
-    Custom4,
-}
-public enum UnnaTypes
-{
-    Neutral,
-    Water,
-    Soil,
-    Power,
-    Mind,
-    Foul,
-    Strong,
-    Mythical,
-    Science,
-    Custom1,
-    Custom2,
-    Custom3,
-    Custom4,
-    None
 }

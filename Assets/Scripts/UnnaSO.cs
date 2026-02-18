@@ -21,7 +21,11 @@ public class UnnaSO : ModAsset
     public int Index;
     public string Name;
     //[SerializeField] LocalizedString description;
+    public string[] TypingRef;
+    [HideInInspector]
     public TypesSO[] Typing;
+    public string[] AbilitiesRef;
+    [HideInInspector]
     public AbilityBase[] Abilities;
     public GameMode WeightClass;
     public Sprite Portrait;
@@ -32,7 +36,11 @@ public class UnnaSO : ModAsset
     [Range(0, 150)] public int Defense;
     [Range(0, 150)] public int BlessRes;
     [Range(0, 150)] public int Speed;
+    public string[] AssistMovesRef;
+    [HideInInspector]
     public MoveSO[] AssistMoves;
+    public string[] LearnableMovesRef = new string[3];
+    [HideInInspector]
     public MoveSO[] LearnableMoves = new MoveSO[3];
     public List<UnnaPreset> Presets;
     public int GetBST => Attack + Defense + MaxHP + BlessPower + BlessRes + Speed;
@@ -65,7 +73,30 @@ public class UnnaSO : ModAsset
     {
         string name = this.name;
         name = name[4..];
-        Debug.Log(name);
+        LearnableMoves = new MoveSO[LearnableMovesRef.Length];
+        for (int i = 0; i < LearnableMoves.Length; i++)
+        {
+            LearnableMoves[i] = CreateInstance<MoveSO>();
+            LearnableMoves[i].name = LearnableMovesRef[i];
+        }
+        AssistMoves = new MoveSO[AssistMovesRef.Length];
+        for (int i = 0; i < AssistMovesRef.Length; i++)
+        {
+            AssistMoves[i] = CreateInstance<MoveSO>();
+            AssistMoves[i].name = AssistMovesRef[i];
+        }
+        Typing = new TypesSO[TypingRef.Length];
+        for (int i = 0; i < Typing.Length; i++)
+        {
+            Typing[i] = CreateInstance<TypesSO>();
+            Typing[i].name = TypingRef[i];
+        }
+        Abilities = new AbilityBase[AbilitiesRef.Length];
+        for (int i = 0; i < Abilities.Length; i++)
+        {
+            Abilities[i] = CreateInstance<AbilityGeneric>();
+            Abilities[i].name = AbilitiesRef[i];
+        }
         string path = Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}/{name.ToLower()}.json";
 
         if (!File.Exists(path) || !Directory.Exists(Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}"))
@@ -83,6 +114,7 @@ public class UnnaSO : ModAsset
         settings.Converters.Add(new ModifierSOJsonConverter());
         settings.Converters.Add(new AbilityJsonConverter());
         File.WriteAllText(path, JsonConvert.SerializeObject(this, Formatting.Indented, settings));
+        Debug.Log(name);
         SaveMJSon();
     }
     [SerializeField] ModelDataJson _mData;

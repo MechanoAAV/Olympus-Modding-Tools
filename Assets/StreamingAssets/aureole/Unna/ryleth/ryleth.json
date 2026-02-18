@@ -1,0 +1,88 @@
+{
+  "Index": 61,
+  "Name": "Ryleth",
+  "TypingRef": [
+    "light"
+  ],
+  "Typing": [
+    {
+      "TypeName": "light"
+    }
+  ],
+  "AbilitiesRef": [
+    "snowball"
+  ],
+  "Abilities": [
+    {
+      "AbilityName": "snowball"
+    }
+  ],
+  "WeightClass": 0,
+  "Portrait": {
+    "SpriteName": "ryleth_icon"
+  },
+  "Size": 1.0,
+  "MaxHP": 50,
+  "Attack": 35,
+  "BlessPower": 44,
+  "Defense": 24,
+  "BlessRes": 24,
+  "Speed": 70,
+  "AssistMovesRef": [
+    "motor"
+  ],
+  "AssistMoves": [
+    {
+      "MoveName": "motor"
+    }
+  ],
+  "LearnableMovesRef": [
+    "LightBeam",
+    "Tackle",
+    "Stomp"
+  ],
+  "LearnableMoves": [
+    {
+      "MoveName": "LightBeam"
+    },
+    {
+      "MoveName": "Tackle"
+    },
+    {
+      "MoveName": "Stomp"
+    }
+  ],
+  "Presets": [
+    {
+      "PresetName": "01",
+      "UnnaPresetName": "ryleth",
+      "UnnaPresetAbility": 0,
+      "UnnaPresetAssist": 0,
+      "UnnaPresetModifier": "vital10",
+      "UnnaPresetStats": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        4
+      ],
+      "UnnaPresetMoves": [
+        "Tackle",
+        "LightBeam",
+        "Stomp"
+      ]
+    }
+  ],
+  "ModName": "aureole",
+  "ModID": 3659215020,
+  "GetBST": 247,
+  "GetHP": 50,
+  "Getattack": 35,
+  "Getdefense": 24,
+  "GetBlessPower": 44,
+  "GetBlessRes": 24,
+  "Getspeed": 70,
+  "name": "061_Ryleth",
+  "hideFlags": 0
+}

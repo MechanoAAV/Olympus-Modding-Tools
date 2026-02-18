@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea904292d04fd664ab28935198871ef8, type: 3}
+  m_Name: 062_Jim
+  m_EditorClassIdentifier: Scripts::UnnaSO
+  ModName: farlands
+  ModID: 3656797813
+  Index: 62
+  Name: Jim
+  TypingRef:
+  - None
+  Typing:
+  - {fileID: 0}
+  AbilitiesRef:
+  - Generic
+  Abilities:
+  - {fileID: 0}
+  WeightClass: 0
+  Portrait: {fileID: 21300000, guid: 2ba6a2d882bf5df4c9434368dbae9b7d, type: 3}
+  Size: 1
+  MaxHP: 82
+  Attack: 30
+  BlessPower: 10
+  Defense: 20
+  BlessRes: 40
+  Speed: 12
+  AssistMovesRef:
+  - Saw
+  AssistMoves:
+  - {fileID: 0}
+  LearnableMovesRef:
+  - Tackle
+  - Saw
+  - PeaceMind
+  - SolarPower
+  LearnableMoves:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  Presets:
+  - Name: 01
+    Data:
+      name: jim
+      modifier: regen10
+      ability: 0
+      assist: 0
+      learntMoves:
+      - SolarPower
+      - Saw
+      - PeaceMind
+      StatReinforcement:
+      - stat: 7
+        boost: 4
+      - stat: 0
+        boost: 2
+      - stat: 1
+        boost: 4
+  _mData:
+    size: 4
+    radius: 1
+    EventCryEnterTime: 0
+    EventCryDeathTime: 0
+    EventPhysTime: 0
+    EventBladeTime: 0
+    EventKickTime: 0
+    EventBeamTime: 0
+    EventWaveTime: 0
+    EventDefeatTime: 0
+    TexAnims: []
+    MaterialEmmissionMinMax: {x: 0, y: 0}
+    MaterialEmmissionSpeed: 0
+    MaterialEmmissionColor: 0

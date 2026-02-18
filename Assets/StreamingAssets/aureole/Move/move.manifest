@@ -1,0 +1,52 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.3.0f1
+CRC: 1759122449
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e381b8c9fe7d926afb8d34a9d3c9b207
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 925dcd54aca86b8cb0430ebe85093296
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 9843618ac1678f499e4325d23f615985
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 096cc36044e14524cb845b40c5e77c0c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1c1a3f95760815d48b5b46790dad62b3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f17db56fa6fc9a2479c3c4f281812417, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 65baa7c1cc5799241882f0606f0ecb11, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.ArgumentCache
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentListenerMode
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.UnityEvent
+Assets:
+- Assets/Aureole/Move/LightBeamDamageFX.prefab
+- Assets/Aureole/Move/LightBeamFX.prefab
+Dependencies: []

@@ -17,6 +17,7 @@ public class StageSO : ModAsset
     [ColorUsage(false,  true)]public Color ColorSky;
     [ColorUsage(false,  true)]public Color ColorHorizon;
     [ColorUsage(false,  true)]public Color ColorGround;
+    [ColorUsage(false,  false)] public Color ShadowColor;
     [Space(20)]
     public Color ColorFog;
     public float FogDensMin;
@@ -35,6 +36,7 @@ public class StageSO : ModAsset
         if (SceneManager.GetActiveScene().name != "zone_Battle") return;
         Shader.SetGlobalFloat("_CloudsAlpha", CloudsAlpha);
         Shader.SetGlobalFloat("_RainSmooth", RainSmooth);
+        Shader.SetGlobalColor("_ShadowColor", ShadowColor);
         RenderSettings.fogMode = FogMode.Linear;
         RenderSettings.fogEndDistance = FogDensMax;
         RenderSettings.fogStartDistance = FogDensMin;
@@ -50,11 +52,12 @@ public class StageSO : ModAsset
     public GameObject Prefab;
     public override void PrintJson()
     {
-        string path = Application.streamingAssetsPath + $"/{ModName.ToLower()}/Stage/{this.GetType().Name}/{name}.json";
-        if (!Directory.Exists(Application.streamingAssetsPath + $"/{ModName.ToLower()}/Stage"))
-            Directory.CreateDirectory(Application.streamingAssetsPath + $"/{ModName.ToLower()}/Stage");
-        if (!Directory.Exists(Application.streamingAssetsPath + $"/{ModName.ToLower()}/Stage/{this.GetType().Name}"))
-            Directory.CreateDirectory(Application.streamingAssetsPath + $"/{ModName.ToLower()}/Stage/{this.GetType().Name}");
+        base.PrintJson();
+        string path = Application.streamingAssetsPath + $"/{ModName}/Stage/{name}/{name.ToLower()}.txt";
+        if (!Directory.Exists(Application.streamingAssetsPath + $"/{ModName}/Stage"))
+            Directory.CreateDirectory(Application.streamingAssetsPath + $"/{ModName}/Stage");
+        if (!Directory.Exists(Application.streamingAssetsPath + $"/{ModName}/Stage/{name}"))
+            Directory.CreateDirectory(Application.streamingAssetsPath + $"/{ModName}/Stage/{name}");
         if (!File.Exists(path))
             File.Create(path).Dispose();
         JsonSerializerSettings serializerSettings = new();
@@ -62,6 +65,8 @@ public class StageSO : ModAsset
         serializerSettings.Converters.Add(new LocalizedStringJsonConverter());
         serializerSettings.Converters.Add(new NewtonsoftMoveGOConverter());
         serializerSettings.Converters.Add(new SpriteRefJsonConverter());
+        if(Icon)
+        File.WriteAllBytes(Application.streamingAssetsPath + $"/{ModName}/Stage/{name}/{name.ToLower()}_icon.png", ImageConversion.EncodeToPNG(Icon.texture));
         File.WriteAllText(path, JsonConvert.SerializeObject(this, Formatting.Indented, serializerSettings));
 #if UNITY_EDITOR
         AssetDatabase.Refresh();

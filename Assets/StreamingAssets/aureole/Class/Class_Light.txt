@@ -1,0 +1,55 @@
+{
+  "Name": {
+    "TableReference": "TypeNames",
+    "Key": "Light",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "Light"
+      },
+      {
+        "Locale": "es",
+        "Value": "Luz"
+      }
+    ]
+  },
+  "IncomingAttackChart": [
+    {
+      "type": "0",
+      "Multiplier": 0.5
+    },
+    {
+      "type": "5",
+      "Multiplier": 0.0
+    },
+    {
+      "type": "6",
+      "Multiplier": 0.5
+    }
+  ],
+  "OutAttackChart": [
+    {
+      "type": "5",
+      "Multiplier": 2.0
+    },
+    {
+      "type": "7",
+      "Multiplier": 2.0
+    },
+    {
+      "type": "8",
+      "Multiplier": 0.5
+    }
+  ],
+  "Color": {
+    "r": 1.0,
+    "g": 0.9757603,
+    "b": 0.456873238,
+    "a": 1.0
+  },
+  "custom": true,
+  "ModName": "aureole",
+  "ModID": 3659215020,
+  "name": "Class_Light",
+  "hideFlags": 0
+}

@@ -1,7 +1,7 @@
 import bpy
 op = bpy.context.active_operator
 
-op.filepath = 'C:\\Users\\Mechano\\Documents\\Untitled.fbx'
+op.filepath = 'D:\\Proyecto Personal\\Pokemon 64\\CRBattle\\Blend\\ryleth.fbx'
 op.use_selection = True
 op.use_visible = False
 op.use_active_collection = False
@@ -25,7 +25,7 @@ op.use_custom_props = False
 op.add_leaf_bones = False
 op.primary_bone_axis = 'Y'
 op.secondary_bone_axis = 'X'
-op.use_armature_deform_only = True
+op.use_armature_deform_only = False
 op.armature_nodetype = 'NULL'
 op.bake_anim = True
 op.bake_anim_use_all_bones = True

@@ -37,27 +37,33 @@ public class SteamWorksItem : ScriptableObject
     public string AssetBundleName;
     public void DeleteItem()
     {
-        if (!SteamManager.Initialized) return;
-        // Make the call to the steam back-end
+        if (!SteamManager.Initialized)
+        {
+            Debug.Log(steamLog);
+            return;
+        }// Make the call to the steam back-end
         Debug.Log("deleted");
         SteamUGC.DeleteItem(new(updateItemParams.ItemID));
         updateItemParams.ItemID = 0;
         SaveAsset();
     }
+    readonly string steamLog = "Steam client is not running!";
     public void UpdateItem()
     {
+        SteamManager.Destroy();
         if (!SteamManager.Initialized)
         {
-            Debug.Log("Steam is not running!");
+            Debug.Log(steamLog);
             return;
         }
         UpdateWorkshopItem(new(updateItemParams.ItemID), updateItemParams);
     }
     public void CreateItem()
     {
+        SteamManager.Destroy();
         if (!SteamManager.Initialized)
         {
-            Debug.Log("Steam is not running!");
+            Debug.Log(steamLog);
             return;
         }
         Debug.Log("Creating Item");
@@ -224,7 +230,7 @@ class SteamWorksItemEditor : Editor
             fixedHeight = 30
         };
         GUILayout.Space(30);
-        if (GUILayout.Button("Upload Item", style))
+        if (GUILayout.Button(_target.UpdateItemParams.ItemID==0?"Upload Item":"Update Item", style))
         {
             if (_target.UpdateItemParams.ItemID == 0)
                 _target.CreateItem();
@@ -243,7 +249,7 @@ class SteamWorksItemEditor : Editor
         }
         if (GUILayout.Button("Update Mod Name to Mod Assets", style))
         {
-            RefreshAsset("Assets/"+Directory.GetParent(AssetDatabase.GetAssetPath(_target)).Name, _target.AssetBundleName);
+            RefreshAsset("Assets/"+Directory.GetParent(AssetDatabase.GetAssetPath(_target)).Name, _target.AssetBundleName, _target.UpdateItemParams.ItemID);
         }
         GUILayout.Space(15);
         if (GUILayout.Button("Create AssetBundle", style))
@@ -272,7 +278,7 @@ class SteamWorksItemEditor : Editor
             AssetDatabase.Refresh();
         }
     }
-    void RefreshAsset(string parent, string modName)
+    void RefreshAsset(string parent, string modName, ulong modID)
     {
         var unnaAssets = AssetDatabase.FindAssets("t:ModAsset",new string[1] { parent });
         foreach (var item in unnaAssets)
@@ -280,6 +286,7 @@ class SteamWorksItemEditor : Editor
             var path = AssetDatabase.GUIDToAssetPath(item);
             var modAsset = (ModAsset)AssetDatabase.LoadAssetAtPath(path, typeof(ModAsset));
             modAsset.ModName = modName;
+            modAsset.ModID = modID;
             Debug.Log(modAsset.name);
             EditorUtility.SetDirty(modAsset);
             AssetDatabase.SaveAssets();

@@ -1,0 +1,63 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.3.0f1
+CRC: 3930047228
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 37281e0f7fde1c3bda6d0a4275ed4798
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a4e78eece803ba33e47479fa4fbcf8f7
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: b722642330c01d5efe7fddba5ce04be2
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2ef43ea77b803dd4cab0bb1c1be5f852, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a599ada5af3bc3944a2e60df76192afd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e5eb80d8e62d9d145bb50fb783c0f731, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 241
+  Script: {instanceID: 0}
+- Class: 243
+  Script: {instanceID: 0}
+- Class: 245
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Unity.Cinemachine
+  ClassName: Unity.Cinemachine.CinemachineTargetGroup/Target
+Assets:
+- Assets/Aureole/Unna/ryleth/ryleth.prefab
+Dependencies: []

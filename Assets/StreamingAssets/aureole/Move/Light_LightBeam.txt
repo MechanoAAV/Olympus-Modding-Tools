@@ -1,0 +1,84 @@
+{
+  "Name": {
+    "TableReference": "MoveNames",
+    "Key": "Light_LightBeam",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "Light Beam"
+      },
+      {
+        "Locale": "es",
+        "Value": "Rayo celestial"
+      }
+    ]
+  },
+  "Description": {
+    "TableReference": "MoveNames",
+    "Key": "Light_DescrLightBeam",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "Creates a beam made of light and strikes the opponent."
+      },
+      {
+        "Locale": "es",
+        "Value": "Crea un rayo de luz y golpea al objetivo."
+      }
+    ]
+  },
+  "FXPrefab": {
+    "MovePrefabName": "LightBeamFX"
+  },
+  "DamageFXPrefab": {
+    "MovePrefabName": "LightBeamDamageFX"
+  },
+  "FXPrefabRef": "LightBeamFX",
+  "DamageFXPrefabRef": "LightBeamDamageFX",
+  "BundlePath": "",
+  "Type": {
+    "TypeName": "light"
+  },
+  "TypeRef": "light",
+  "Power": 60.0,
+  "BlessPower": 90.0,
+  "HitTimes": 1,
+  "CriticalChance": 1.0,
+  "Contact": false,
+  "RecoilAmount": 0.0,
+  "Grounded": false,
+  "UsagePoints": 10,
+  "MoveEffect": {
+    "MoveEffectBaseName": "normal"
+  },
+  "MoveEffectRef": "normal",
+  "Category": 0,
+  "Target": 0,
+  "FogDistance": {
+    "x": 20.0,
+    "y": 150.0
+  },
+  "FogColor": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 0.0
+  },
+  "EnvColor": {
+    "r": 1.0,
+    "g": 0.8987983,
+    "b": 0.4029649,
+    "a": 0.0
+  },
+  "CamType": 0,
+  "AttackStateName": "beam",
+  "Effects": null,
+  "Secondaries": [],
+  "Accuracy": 100,
+  "Accurate": false,
+  "ModName": "aureole",
+  "ModID": 3659215020,
+  "IsCustom": false,
+  "name": "Light_LightBeam",
+  "hideFlags": 0
+}

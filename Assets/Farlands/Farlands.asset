@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af365f17725cfb449f484c70d27a77e, type: 3}
+  m_Name: Farlands
+  m_EditorClassIdentifier: Assembly-CSharp::SteamWorksItem
+  updateItemParams:
+    ItemID: 3656797813
+    ItemName: Farlands
+    ItemDescription: 'Jim is coming from very far lands!
+
+      This expansion includes:
+
+      -
+      Jim as a playable character.
+
+      - Farm stage.'
+    contentPath: D:\Proyecto Personal\Pokemon 64\CRBattle\Mods\Olympus Modding Tools\Olympus
+      Modding Tools\Assets\StreamingAssets\farlands
+    imagePath: D:\Proyecto Personal\Pokemon 64\CRBattle\Mods\Olympus Modding Tools\Olympus
+      Modding Tools\Assets\StreamingAssets\farlands\steamPreview.jpg
+    changeNotes: 
+  AssetBundleName: farlands

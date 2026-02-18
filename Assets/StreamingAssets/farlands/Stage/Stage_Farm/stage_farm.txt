@@ -1,0 +1,64 @@
+{
+  "Name": {
+    "TableReference": "StageNames",
+    "Key": "Farlands_Farm",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "Farm (Farlands)"
+      },
+      {
+        "Locale": "es",
+        "Value": "Granja (Farlands)"
+      }
+    ]
+  },
+  "Weather": 0,
+  "BlocksWeather": true,
+  "Icon": {
+    "SpriteName": "stageFarm_icon"
+  },
+  "OverrideRainLighting": false,
+  "ColorSky": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 0.0
+  },
+  "ColorHorizon": {
+    "r": 0.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 0.0
+  },
+  "ColorGround": {
+    "r": 0.137317285,
+    "g": 0.137317285,
+    "b": 0.2776279,
+    "a": 0.0
+  },
+  "ShadowColor": {
+    "r": 0.4509804,
+    "g": 0.4509804,
+    "b": 0.5686275,
+    "a": 0.0
+  },
+  "ColorFog": {
+    "r": 0.142711312,
+    "g": 0.139918268,
+    "b": 0.2991913,
+    "a": 0.0
+  },
+  "FogDensMin": 50.0,
+  "FogDensMax": 450.0,
+  "Shine": 0.357,
+  "CloudsAlpha": 0.0,
+  "RainSmooth": 0.0,
+  "Prefab": {
+    "MovePrefabName": "stage_farm"
+  },
+  "ModName": "farlands",
+  "ModID": 3656797813,
+  "name": "Stage_Farm",
+  "hideFlags": 0
+}

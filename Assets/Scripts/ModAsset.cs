@@ -6,13 +6,170 @@ using UnityEngine.Localization;
 using System;
 using System.Collections.Generic;
 using UnityEngine.Localization.Settings;
+using System.Linq;
+using UnityEngine.Rendering;
 
 public class ModAsset : ScriptableObject
 {
     public string ModName = "mymod";
+    public ulong ModID = 0;
     public virtual void PrintJson()
     {
 
+    }
+}
+public sealed class UnnaSaveDataJsonConverter : JsonConverter<UnnaSaveData>
+{
+    public override void WriteJson(JsonWriter writer, UnnaSaveData value, JsonSerializer serializer)
+    {
+        if (value.learntMoves == null)
+        {
+            JObject objN = new JObject
+        (
+            new JProperty("UnnaSaveName", string.Empty),
+            new JProperty("UnnaSaveModifier", string.Empty),
+             new JProperty("UnnaSaveAbility", 0),
+            new JProperty("UnnaSaveAssist", 0),
+            new JProperty("UnnaSaveStats", new int[6]),
+            new JProperty("UnnaSaveMoves", new List<string>())
+        );
+            objN.WriteTo(writer);
+            return;
+        }
+        Dictionary<Stat, int> refValues = new()
+        {
+            { Stat.HP, 0 }, 
+            { Stat.Attack, 0 }, 
+            { Stat.BlessPower, 0 }, 
+            { Stat.Defense, 0 }, 
+            { Stat.BlessRes, 0 }, 
+            { Stat.Speed, 0 }, 
+        };
+        for (int i = 0; i < value.StatReinforcement.Length; i++)
+        {
+            refValues[value.StatReinforcement[i].stat] = value.StatReinforcement[i].boost;
+        }
+        var jobjectKeyValuePair = new int[6]
+        {
+            refValues.ContainsKey(Stat.HP)?refValues[Stat.HP]:0,
+            refValues.ContainsKey(Stat.Attack)?refValues[Stat.Attack]:0,
+            refValues.ContainsKey(Stat.BlessPower)?refValues[Stat.BlessPower]:0,
+            refValues.ContainsKey(Stat.Defense)?refValues[Stat.Defense]:0,
+            refValues.ContainsKey(Stat.BlessRes)?refValues[Stat.BlessRes]:0,
+            refValues.ContainsKey(Stat.Speed)?refValues[Stat.Speed]:0,
+        };
+        List<string> moves = new();
+        foreach (var move in value.learntMoves)
+        {
+            moves.Add(move);
+        }
+        JObject obj = new JObject
+        (
+            new JProperty("UnnaSaveName", value.name),
+            new JProperty("UnnaSaveModifier", value.modifier),
+            new JProperty("UnnaSaveAbility", value.ability),
+            new JProperty("UnnaSaveAssist", value.assist),
+            new JProperty("UnnaSaveStats", jobjectKeyValuePair),
+            new JProperty("UnnaSaveMoves", value.learntMoves)
+        );
+        obj.WriteTo(writer);
+    }
+    public override UnnaSaveData ReadJson(JsonReader reader, Type objectType, UnnaSaveData existingValue, bool hasExistingValue, JsonSerializer serializer)
+    {
+        JObject obj = JObject.Load(reader);
+        if (!obj.ContainsKey("UnnaSaveStats"))
+        {
+            Debug.Log("No stats");
+            return new();
+        }
+        if (!obj.ContainsKey("UnnaSaveMoves"))
+        {
+            Debug.Log("No moves");
+            return new();
+        }
+        var movesToken = obj.Value<JToken>("UnnaSaveMoves");
+        var moves = movesToken.ToObject<List<string>>();
+
+        string[] moveData = new string[moves.Count];
+        for (int i = 0; i < moveData.Length; i++)
+        {
+            moveData[i] = moves.ToList()[i];
+        }
+        var statsToken = obj.Value<JToken>("UnnaSaveStats");
+        var reinfList = statsToken.ToObject<List<int>>();
+        if (reinfList.Count == 0) return new UnnaSaveData();
+        StatBoost[] jobjectKeyValuePair = new StatBoost[6]
+        {
+            new()
+            {
+                stat= Stat.HP,
+                boost=reinfList[0]
+
+            },
+            new()
+            {
+                stat= Stat.Attack,
+                boost=reinfList[1]
+
+            } ,
+            new()
+            {
+                stat= Stat.Defense,
+                boost=reinfList[2]
+
+            } ,
+            new()
+            {
+                stat= Stat.BlessPower,
+                boost=reinfList[3]
+
+            } ,
+            new()
+            {
+                stat= Stat.BlessRes,
+                boost=reinfList[4]
+
+            } ,
+            new()
+            {
+                stat= Stat.Speed,
+                boost=reinfList[5]
+
+            }
+        };
+        UnnaSaveData data = new()
+        {
+            name = obj.Value<string>("UnnaSaveName"),
+            modifier = obj.Value<string>("UnnaSaveModifier"),
+            assist = obj.Value<int>("UnnaSaveAssist"),
+            ability = obj.Value<int>("UnnaSaveAbility"),
+            learntMoves = moveData.ToArray(),
+            StatReinforcement = jobjectKeyValuePair
+        };
+        return data;
+    }
+}
+public sealed class NewtonsoftVector2Converter : JsonConverter<Vector2>
+{
+    public override void WriteJson(JsonWriter writer, Vector2 value, JsonSerializer serializer)
+    {
+        JObject obj = new JObject
+        (
+            new JProperty("x", value.x),
+            new JProperty("y", value.y)
+        );
+
+        obj.WriteTo(writer);
+    }
+
+    public override Vector2 ReadJson(JsonReader reader, Type objectType, Vector2 existingValue, bool hasExistingValue, JsonSerializer serializer)
+    {
+        JObject obj = JObject.Load(reader);
+        return new Vector2
+        (
+            obj.Value<float>("x"),
+            obj.Value<float>("y")
+        );
     }
 }
 public sealed class NewtonsoftMoveEffectConverter : JsonConverter<MoveEffectBase>
@@ -154,12 +311,12 @@ public sealed class UnnaPresetJsonConverter : JsonConverter<UnnaPreset>
         }
         var jobjectKeyValuePair = new int[6]
         {
-            refValues.ContainsKey(Stat.HP)?refValues[Stat.Attack]:0,
+            refValues.ContainsKey(Stat.HP)?refValues[Stat.HP]:0,
             refValues.ContainsKey(Stat.Attack)?refValues[Stat.Attack]:0,
-            refValues.ContainsKey(Stat.BlessPower)?refValues[Stat.Attack]:0,
-            refValues.ContainsKey(Stat.Defense)?refValues[Stat.Attack]:0,
-            refValues.ContainsKey(Stat.BlessRes)?refValues[Stat.Attack]:0,
-            refValues.ContainsKey(Stat.Speed)?refValues[Stat.Attack]:0,
+            refValues.ContainsKey(Stat.BlessPower)?refValues[Stat.BlessPower]:0,
+            refValues.ContainsKey(Stat.Defense)?refValues[Stat.Defense]:0,
+            refValues.ContainsKey(Stat.BlessRes)?refValues[Stat.BlessRes]:0,
+            refValues.ContainsKey(Stat.Speed)?refValues[Stat.Speed]:0,
         };
 
         List<string> moves = new();

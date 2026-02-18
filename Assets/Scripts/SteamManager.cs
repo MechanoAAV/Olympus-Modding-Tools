@@ -45,8 +45,13 @@ public class SteamManager : MonoBehaviour
     {
         get
         {
+            if(!Instance)return false;
             return Instance.m_bInitialized;
         }
+    }
+    public static void Destroy()
+    {
+        DestroyImmediate(Instance.gameObject);
     }
 
     protected SteamAPIWarningMessageHook_t m_SteamAPIWarningMessageHook;
@@ -61,7 +66,7 @@ public class SteamManager : MonoBehaviour
         // Only one instance of SteamManager at a time!
         if (s_instance != null)
         {
-            Destroy(gameObject);
+            DestroyImmediate(gameObject);
             return;
         }
         s_instance = this;
@@ -109,7 +114,7 @@ public class SteamManager : MonoBehaviour
         m_bInitialized = SteamAPI.Init();
         if (!m_bInitialized)
         {
-            Debug.LogWarning("[Steamworks.NET] SteamAPI_Init() failed. Refer to Valve's documentation or the comment above this line for more information.", this);
+            Debug.LogWarning("[Steamworks.NET] SteamAPI_Init() failed. Make sure the Steam client is running. Refer to Valve's documentation or the comment above this line for more information.", this);
 
             return;
         }

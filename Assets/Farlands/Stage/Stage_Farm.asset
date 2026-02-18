@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdcccfde1cf66774d97445e4e97bc66b, type: 3}
+  m_Name: Stage_Farm
+  m_EditorClassIdentifier: Assembly-CSharp::StageSO
+  ModName: farlands
+  ModID: 3656797813
+  Name:
+    m_TableReference:
+      m_TableCollectionName: GUID:d813f301274647e438fde257d24b67b2
+    m_TableEntryReference:
+      m_KeyId: 8097849344
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  Weather: 0
+  BlocksWeather: 1
+  Icon: {fileID: 21300000, guid: aef46a3ad560caf4eacdf001b561c0a1, type: 3}
+  OverrideRainLighting: 0
+  ColorSky: {r: 1, g: 1, b: 1, a: 0}
+  ColorHorizon: {r: 0, g: 0, b: 0, a: 0}
+  ColorGround: {r: 0.13731728, g: 0.13731728, b: 0.2776279, a: 0}
+  ShadowColor: {r: 0.4509804, g: 0.4509804, b: 0.5686275, a: 0}
+  ColorFog: {r: 0.14271131, g: 0.13991827, b: 0.2991913, a: 0}
+  FogDensMin: 50
+  FogDensMax: 450
+  Shine: 0.357
+  CloudsAlpha: 0
+  RainSmooth: 0
+  Prefab: {fileID: 1673484681714963772, guid: d526579058eb31849a94c825071d454d, type: 3}
+  references:
+    version: 2
+    RefIds: []

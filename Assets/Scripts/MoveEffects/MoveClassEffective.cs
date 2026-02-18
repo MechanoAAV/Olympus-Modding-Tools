@@ -5,5 +5,5 @@ using UnityEngine;
 
 public class MoveClassEffective : MoveEffectBase
 {
-    public UnnaTypes _type;
+    public string _type;
 }
