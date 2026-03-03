@@ -16,10 +16,12 @@ public struct UpdateItemParams
     public string ItemName;
     [TextArea]
     public string ItemDescription;
+    public bool ContentRelativePath;
     [TextArea]
     [Tooltip("[Unity]Right Click on your Content's folder and select Copy Full Path Location\n" +
         "[Outside Unity] On the top bar of your file explorer, right click and press Copy Path")]
     public string contentPath;
+    public bool ImageRelativePath;
     [TextArea]
     [Tooltip("Right Click on your Preview Image and select Copy Path")]
     public string imagePath;
@@ -100,11 +102,15 @@ public class SteamWorksItem : ScriptableObject
         SteamUGC.SetItemTitle(updateHandle, updateItemParams.ItemName);
         SteamUGC.SetItemDescription(updateHandle, updateItemParams.ItemDescription);
         SteamUGC.SetItemVisibility(updateHandle, ERemoteStoragePublishedFileVisibility.k_ERemoteStoragePublishedFileVisibilityPublic);
-        SteamUGC.SetItemContent(updateHandle, updateItemParams.contentPath);
-        if (!string.IsNullOrEmpty(updateItemParams.imagePath))
+        string contentPath = updateItemParams.ContentRelativePath ? Application.streamingAssetsPath +"/"+ updateItemParams.contentPath : updateItemParams.contentPath;
+        SteamUGC.SetItemContent(updateHandle, contentPath);
+        string imagePath = updateItemParams.ImageRelativePath ? Application.streamingAssetsPath+"/" + updateItemParams.imagePath:updateItemParams.imagePath;
+        Debug.Log(contentPath);
+        Debug.Log(imagePath);
+        if (!string.IsNullOrEmpty(imagePath))
         {
             // Sets the primary preview image for the item. (https://partner.steamgames.com/doc/api/ISteamUGC#SetItemPreview)
-            SteamUGC.SetItemPreview(updateHandle, updateItemParams.imagePath);
+            SteamUGC.SetItemPreview(updateHandle, imagePath);
         }
 
         // Make the call to the steam back-end

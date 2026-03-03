@@ -27,9 +27,9 @@ MonoBehaviour:
 
       - Avatar customization based
       on Ramila and Ryleth.'
-    contentPath: D:\Proyecto Personal\Pokemon 64\CRBattle\Mods\Olympus Modding Tools\Olympus
-      Modding Tools\Assets\StreamingAssets\aureole
-    imagePath: D:\Proyecto Personal\Pokemon 64\CRBattle\Mods\Olympus Modding Tools\Olympus
-      Modding Tools\Assets\StreamingAssets\aureole\steamPreview.jpg
+    ContentRelativePath: 1
+    contentPath: aureole
+    ImageRelativePath: 1
+    imagePath: aureole\steamPreview.jpg
     changeNotes: 
   AssetBundleName: aureole

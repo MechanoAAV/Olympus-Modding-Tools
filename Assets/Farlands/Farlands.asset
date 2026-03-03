@@ -23,9 +23,9 @@ MonoBehaviour:
       Jim as a playable character.
 
       - Farm stage.'
-    contentPath: D:\Proyecto Personal\Pokemon 64\CRBattle\Mods\Olympus Modding Tools\Olympus
-      Modding Tools\Assets\StreamingAssets\farlands
-    imagePath: D:\Proyecto Personal\Pokemon 64\CRBattle\Mods\Olympus Modding Tools\Olympus
-      Modding Tools\Assets\StreamingAssets\farlands\steamPreview.jpg
+    ContentRelativePath: 1
+    contentPath: farlands
+    ImageRelativePath: 1
+    imagePath: farlands/steamPreview.jpg
     changeNotes: 
   AssetBundleName: farlands
