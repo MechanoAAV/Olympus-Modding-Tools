@@ -22,7 +22,7 @@ public class CustomizSO : ModAsset
             if (Options[i])
                 File.WriteAllBytes(path + $"/{Options[i].name}.png", ImageConversion.EncodeToPNG(Options[i]));
         }
-        File.WriteAllText(path + $"/{name}.json", content);
+        File.WriteAllText(path + $"/{name}.txt", content);
     }
 }
 [System.Serializable]

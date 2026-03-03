@@ -24,7 +24,7 @@ public class TrainerSO : ModAsset
             SubName = SubName,
             SelectedCard=CardSelection
         };
-        string path = $"{Application.streamingAssetsPath}/{ModName}/Trainer/{name}/{name}.json";
+        string path = $"{Application.streamingAssetsPath}/{ModName}/Trainer/{name}/{name}.txt";
         var jsonValue = JsonConvert.SerializeObject(json);
         if (!Directory.Exists($"{Application.streamingAssetsPath}/{ModName}/Trainer"))
             Directory.CreateDirectory($"{Application.streamingAssetsPath}/{ModName}/Trainer");

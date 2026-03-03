@@ -53,7 +53,7 @@ public class TeamSO : ModAsset
                 Ace
             }
         };
-        string path = $"{Application.streamingAssetsPath}/{ModName}/Team/{name}.json";
+        string path = $"{Application.streamingAssetsPath}/{ModName}/Team/{name}.txt";
         var settings = new JsonSerializerSettings();
         settings.Converters.Add(new UnnaSaveDataJsonConverter());
         var jsonValue = JsonConvert.SerializeObject(json, Formatting.Indented, settings);

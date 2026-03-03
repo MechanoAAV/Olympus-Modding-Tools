@@ -1,0 +1,84 @@
+{
+  "Members": [
+    {
+      "UnnaSaveName": "ciervatillo",
+      "UnnaSaveModifier": "ModRegen10",
+      "UnnaSaveAbility": 0,
+      "UnnaSaveAssist": 0,
+      "UnnaSaveStats": [
+        4,
+        3,
+        0,
+        0,
+        0,
+        3
+      ],
+      "UnnaSaveMoves": [
+        "Soil_Disrupt",
+        "None_Grumble",
+        "Strong_RapidStrikes"
+      ]
+    },
+    {
+      "UnnaSaveName": "borpse",
+      "UnnaSaveModifier": "GenericMod_ResistBP",
+      "UnnaSaveAbility": 0,
+      "UnnaSaveAssist": 0,
+      "UnnaSaveStats": [
+        3,
+        0,
+        0,
+        3,
+        3,
+        1
+      ],
+      "UnnaSaveMoves": [
+        "Foul_BlessOverdrive",
+        "Foul_LastWord",
+        "None_Shield"
+      ]
+    },
+    {
+      "UnnaSaveName": "liwalker",
+      "UnnaSaveModifier": "pinch_30bra",
+      "UnnaSaveAbility": 0,
+      "UnnaSaveAssist": 0,
+      "UnnaSaveStats": [
+        2,
+        4,
+        0,
+        0,
+        0,
+        4
+      ],
+      "UnnaSaveMoves": [
+        "froststream",
+        "earthcrash",
+        "metalstrike"
+      ]
+    },
+    {
+      "UnnaSaveName": "ryleth",
+      "UnnaSaveModifier": "vital10",
+      "UnnaSaveAbility": 0,
+      "UnnaSaveAssist": 0,
+      "UnnaSaveStats": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        4
+      ],
+      "UnnaSaveMoves": [
+        "Tackle",
+        "LightBeam",
+        "Stomp"
+      ]
+    }
+  ],
+  "Category": 0,
+  "Owner": "Trnr_Ramila",
+  "AI": "master",
+  "TeamType": 4
+}

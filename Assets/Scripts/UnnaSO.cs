@@ -71,8 +71,6 @@ public class UnnaSO : ModAsset
 #if UNITY_EDITOR
     public override void PrintJson()
     {
-        string name = this.name;
-        name = name[4..];
         LearnableMoves = new MoveSO[LearnableMovesRef.Length];
         for (int i = 0; i < LearnableMoves.Length; i++)
         {
@@ -97,7 +95,7 @@ public class UnnaSO : ModAsset
             Abilities[i] = CreateInstance<AbilityGeneric>();
             Abilities[i].name = AbilitiesRef[i];
         }
-        string path = Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}/{name.ToLower()}.json";
+        string path = Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}/{name.ToLower()}.txt";
 
         if (!File.Exists(path) || !Directory.Exists(Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}"))
         {
@@ -123,7 +121,7 @@ public class UnnaSO : ModAsset
         string name = this.name;
         name = name[4..];
         Debug.Log(name);
-        string path = Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}/{name.ToLower()}_mdata.json";
+        string path = Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}/{name.ToLower()}_mdata.txt";
 
         if (!File.Exists(path) || !Directory.Exists(Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}"))
         {
