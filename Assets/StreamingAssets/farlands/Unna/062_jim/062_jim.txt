@@ -1,0 +1,92 @@
+{
+  "Index": 62,
+  "Name": "Jim",
+  "TypingRef": [
+    "None"
+  ],
+  "Typing": [
+    {
+      "TypeName": "None"
+    }
+  ],
+  "AbilitiesRef": [
+    "Generic"
+  ],
+  "Abilities": [
+    {
+      "AbilityName": "Generic"
+    }
+  ],
+  "WeightClass": 0,
+  "Portrait": {
+    "SpriteName": "jim_icon"
+  },
+  "Size": 1.0,
+  "MaxHP": 92,
+  "Attack": 30,
+  "BlessPower": 10,
+  "Defense": 25,
+  "BlessRes": 40,
+  "Speed": 16,
+  "AssistMovesRef": [
+    "Saw"
+  ],
+  "AssistMoves": [
+    {
+      "MoveName": "Saw"
+    }
+  ],
+  "LearnableMovesRef": [
+    "Tackle",
+    "Saw",
+    "PeaceMind",
+    "SolarPower"
+  ],
+  "LearnableMoves": [
+    {
+      "MoveName": "Tackle"
+    },
+    {
+      "MoveName": "Saw"
+    },
+    {
+      "MoveName": "PeaceMind"
+    },
+    {
+      "MoveName": "SolarPower"
+    }
+  ],
+  "Presets": [
+    {
+      "PresetName": "01",
+      "UnnaPresetName": "jim",
+      "UnnaPresetAbility": 0,
+      "UnnaPresetAssist": 0,
+      "UnnaPresetModifier": "regen10",
+      "UnnaPresetStats": [
+        4,
+        2,
+        0,
+        4,
+        0,
+        0
+      ],
+      "UnnaPresetMoves": [
+        "SolarPower",
+        "Saw",
+        "PeaceMind"
+      ]
+    }
+  ],
+  "ModName": "farlands",
+  "ModID": 3656797813,
+  "GetBST": 213,
+  "GetHP": 92,
+  "Getattack": 30,
+  "Getdefense": 25,
+  "GetBlessPower": 10,
+  "GetBlessRes": 40,
+  "Getspeed": 16,
+  "name": "062_Jim",
+  "hideFlags": 0
+}

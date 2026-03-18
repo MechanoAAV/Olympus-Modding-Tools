@@ -1,0 +1,86 @@
+{
+  "Index": 63,
+  "Name": "Aki",
+  "TypingRef": [
+    "neutral"
+  ],
+  "Typing": [
+    {
+      "TypeName": "neutral"
+    }
+  ],
+  "AbilitiesRef": [],
+  "Abilities": [],
+  "WeightClass": 0,
+  "Portrait": {
+    "SpriteName": "aki"
+  },
+  "Size": 1.0,
+  "MaxHP": 86,
+  "Attack": 41,
+  "BlessPower": 25,
+  "Defense": 27,
+  "BlessRes": 30,
+  "Speed": 20,
+  "AssistMovesRef": [
+    "stab",
+    "saw"
+  ],
+  "AssistMoves": [
+    {
+      "MoveName": "stab"
+    },
+    {
+      "MoveName": "saw"
+    }
+  ],
+  "LearnableMovesRef": [
+    "saw",
+    "blade",
+    ""
+  ],
+  "LearnableMoves": [
+    {
+      "MoveName": "saw"
+    },
+    {
+      "MoveName": "blade"
+    },
+    {
+      "MoveName": ""
+    }
+  ],
+  "Presets": [
+    {
+      "PresetName": "01",
+      "UnnaPresetName": "aki",
+      "UnnaPresetAbility": 0,
+      "UnnaPresetAssist": 0,
+      "UnnaPresetModifier": "vital10",
+      "UnnaPresetStats": [
+        2,
+        4,
+        0,
+        0,
+        0,
+        4
+      ],
+      "UnnaPresetMoves": [
+        "saw",
+        "stab",
+        ""
+      ]
+    }
+  ],
+  "ModName": "flatworld",
+  "ModID": 0,
+  "GetBST": 229,
+  "GetHP": 86,
+  "Getattack": 41,
+  "Getdefense": 27,
+  "GetBlessPower": 25,
+  "GetBlessRes": 30,
+  "Getspeed": 20,
+  "name": "063_Aki",
+  "hideFlags": 0
+}

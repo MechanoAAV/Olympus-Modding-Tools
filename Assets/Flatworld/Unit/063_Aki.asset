@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea904292d04fd664ab28935198871ef8, type: 3}
+  m_Name: 063_Aki
+  m_EditorClassIdentifier: Assembly-CSharp::UnnaSO
+  ModName: flatworld
+  ModID: 3677982039
+  Index: 63
+  Name: Aki
+  TypingRef:
+  - neutral
+  Typing:
+  - {fileID: 0}
+  AbilitiesRef: []
+  Abilities: []
+  WeightClass: 0
+  Portrait: {fileID: 21300000, guid: 4f8a978b32eca724ebb2044703e9dbcf, type: 3}
+  Size: 1
+  MaxHP: 86
+  Attack: 41
+  BlessPower: 25
+  Defense: 27
+  BlessRes: 30
+  Speed: 20
+  AssistMovesRef:
+  - stab
+  - saw
+  - grassblade
+  - overheat
+  - froststream
+  AssistMoves:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  LearnableMovesRef:
+  - saw
+  - grassblade
+  - telekinesis
+  - overheat
+  - froststream
+  LearnableMoves:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  Presets:
+  - Name: 01
+    Data:
+      name: aki
+      modifier: vital10
+      ability: 0
+      assist: 0
+      learntMoves:
+      - saw
+      - stab
+      - froststream
+      StatReinforcement:
+      - stat: 7
+        boost: 2
+      - stat: 0
+        boost: 2
+      - stat: 3
+        boost: 4
+      - stat: 2
+        boost: 2
+  _mData:
+    size: 1
+    radius: 1.5
+    EventCryEnterTime: 0
+    EventCryDeathTime: 0
+    EventPhysTime: 1.333333
+    EventBladeTime: 1.3333334
+    EventKickTime: 0
+    EventBeamTime: 1.4
+    EventWaveTime: 1.3
+    EventDefeatTime: 2
+    TexAnims:
+    - ClipName: idle
+      animData:
+      - MatIndex: 1
+        Time: 0
+        TexValuex: 0
+        TexValuey: -0.25
+      - MatIndex: 1
+        Time: 0.1
+        TexValuex: 0.5
+        TexValuey: -0.25
+      - MatIndex: 1
+        Time: 0.15
+        TexValuex: 0
+        TexValuey: 0
+    - ClipName: wave
+      animData:
+      - MatIndex: 1
+        Time: 0
+        TexValuex: 0.5
+        TexValuey: 0
+    - ClipName: phys
+      animData:
+      - MatIndex: 1
+        Time: 0
+        TexValuex: 0.5
+        TexValuey: 0
+    - ClipName: beam
+      animData:
+      - MatIndex: 1
+        Time: 0
+        TexValuex: 0.5
+        TexValuey: 0
+    - ClipName: blade
+      animData:
+      - MatIndex: 1
+        Time: 0
+        TexValuex: 0.5
+        TexValuey: 0
+    MaterialEmmissionMinMax: {x: 0, y: 0}
+    MaterialEmmissionSpeed: 0
+    MaterialEmmissionColor: 0

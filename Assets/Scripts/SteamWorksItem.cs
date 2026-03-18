@@ -39,6 +39,7 @@ public class SteamWorksItem : ScriptableObject
     public string AssetBundleName;
     public void DeleteItem()
     {
+        Debug.ClearDeveloperConsole();
         if (!SteamManager.Initialized)
         {
             Debug.Log(steamLog);
@@ -52,6 +53,7 @@ public class SteamWorksItem : ScriptableObject
     readonly string steamLog = "Steam client is not running!";
     public void UpdateItem()
     {
+        Debug.ClearDeveloperConsole();
         SteamManager.Destroy();
         if (!SteamManager.Initialized)
         {
@@ -62,6 +64,7 @@ public class SteamWorksItem : ScriptableObject
     }
     public void CreateItem()
     {
+        Debug.ClearDeveloperConsole();
         SteamManager.Destroy();
         if (!SteamManager.Initialized)
         {
@@ -136,7 +139,9 @@ public class SteamWorksItem : ScriptableObject
                 updateItemParams.ItemID = 0;
                 SaveAsset();
             }
-            Debug.LogWarning($"Workshop item update failed: {result.m_eResult}");
+            if(result.m_eResult == EResult.k_EResultFail)
+                Debug.Log($"You probably need to restart steam or your paths are not set correctly");
+            Debug.LogWarning($"Workshop item update failed: {result.m_eResult}, user needs to agree to Terms:{result.m_bUserNeedsToAcceptWorkshopLegalAgreement}");
         }
     }
     void SaveAsset()

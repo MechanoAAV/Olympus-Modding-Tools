@@ -141,6 +141,7 @@ public class SteamManager : MonoBehaviour
 
         if (m_SteamAPIWarningMessageHook == null)
         {
+            Debug.Log("Start Steam");
             // Set up our callback to receive warning messages from Steam.
             // You must launch with "-debug_steamapi" in the launch args to receive warnings.
             m_SteamAPIWarningMessageHook = new SteamAPIWarningMessageHook_t(SteamAPIDebugTextHook);

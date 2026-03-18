@@ -118,8 +118,6 @@ public class UnnaSO : ModAsset
     [SerializeField] ModelDataJson _mData;
     void SaveMJSon()
     {
-        string name = this.name;
-        name = name[4..];
         Debug.Log(name);
         string path = Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}/{name.ToLower()}_mdata.txt";
 

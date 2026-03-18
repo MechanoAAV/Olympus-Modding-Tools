@@ -26,6 +26,6 @@ MonoBehaviour:
     ContentRelativePath: 1
     contentPath: farlands
     ImageRelativePath: 1
-    imagePath: farlands/steamPreview.jpg
+    imagePath: farlands\steamPreview.jpg
     changeNotes: 
   AssetBundleName: farlands

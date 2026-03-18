@@ -1,0 +1,87 @@
+{
+    "size": 1.0,
+    "radius": 1.5,
+    "EventCryEnterTime": 0.0,
+    "EventCryDeathTime": 0.0,
+    "EventPhysTime": 1.3333330154418946,
+    "EventBladeTime": 1.3333333730697632,
+    "EventKickTime": 0.0,
+    "EventBeamTime": 1.399999976158142,
+    "EventWaveTime": 1.2999999523162842,
+    "EventDefeatTime": 2.0,
+    "TexAnims": [
+        {
+            "ClipName": "idle",
+            "animData": [
+                {
+                    "MatIndex": 1,
+                    "Time": 0.0,
+                    "TexValuex": 0.0,
+                    "TexValuey": -0.25
+                },
+                {
+                    "MatIndex": 1,
+                    "Time": 0.10000000149011612,
+                    "TexValuex": 0.5,
+                    "TexValuey": -0.25
+                },
+                {
+                    "MatIndex": 1,
+                    "Time": 0.15000000596046449,
+                    "TexValuex": 0.0,
+                    "TexValuey": 0.0
+                }
+            ]
+        },
+        {
+            "ClipName": "wave",
+            "animData": [
+                {
+                    "MatIndex": 1,
+                    "Time": 0.0,
+                    "TexValuex": 0.5,
+                    "TexValuey": 0.0
+                }
+            ]
+        },
+        {
+            "ClipName": "phys",
+            "animData": [
+                {
+                    "MatIndex": 1,
+                    "Time": 0.0,
+                    "TexValuex": 0.5,
+                    "TexValuey": 0.0
+                }
+            ]
+        },
+        {
+            "ClipName": "beam",
+            "animData": [
+                {
+                    "MatIndex": 1,
+                    "Time": 0.0,
+                    "TexValuex": 0.5,
+                    "TexValuey": 0.0
+                }
+            ]
+        },
+        {
+            "ClipName": "blade",
+            "animData": [
+                {
+                    "MatIndex": 1,
+                    "Time": 0.0,
+                    "TexValuex": 0.5,
+                    "TexValuey": 0.0
+                }
+            ]
+        }
+    ],
+    "MaterialEmmissionMinMax": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "MaterialEmmissionSpeed": 0.0,
+    "MaterialEmmissionColor": 0.0
+}

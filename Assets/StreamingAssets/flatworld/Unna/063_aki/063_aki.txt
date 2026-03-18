@@ -1,0 +1,106 @@
+{
+  "Index": 63,
+  "Name": "Aki",
+  "TypingRef": [
+    "neutral"
+  ],
+  "Typing": [
+    {
+      "TypeName": "neutral"
+    }
+  ],
+  "AbilitiesRef": [],
+  "Abilities": [],
+  "WeightClass": 0,
+  "Portrait": {
+    "SpriteName": "aki"
+  },
+  "Size": 1.0,
+  "MaxHP": 86,
+  "Attack": 41,
+  "BlessPower": 25,
+  "Defense": 27,
+  "BlessRes": 30,
+  "Speed": 20,
+  "AssistMovesRef": [
+    "stab",
+    "saw",
+    "grassblade",
+    "overheat",
+    "froststream"
+  ],
+  "AssistMoves": [
+    {
+      "MoveName": "stab"
+    },
+    {
+      "MoveName": "saw"
+    },
+    {
+      "MoveName": "grassblade"
+    },
+    {
+      "MoveName": "overheat"
+    },
+    {
+      "MoveName": "froststream"
+    }
+  ],
+  "LearnableMovesRef": [
+    "saw",
+    "grassblade",
+    "telekinesis",
+    "overheat",
+    "froststream"
+  ],
+  "LearnableMoves": [
+    {
+      "MoveName": "saw"
+    },
+    {
+      "MoveName": "grassblade"
+    },
+    {
+      "MoveName": "telekinesis"
+    },
+    {
+      "MoveName": "overheat"
+    },
+    {
+      "MoveName": "froststream"
+    }
+  ],
+  "Presets": [
+    {
+      "PresetName": "01",
+      "UnnaPresetName": "aki",
+      "UnnaPresetAbility": 0,
+      "UnnaPresetAssist": 0,
+      "UnnaPresetModifier": "vital10",
+      "UnnaPresetStats": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        4
+      ],
+      "UnnaPresetMoves": [
+        "saw",
+        "stab",
+        "froststream"
+      ]
+    }
+  ],
+  "ModName": "flatworld",
+  "ModID": 3677982039,
+  "GetBST": 229,
+  "GetHP": 86,
+  "Getattack": 41,
+  "Getdefense": 27,
+  "GetBlessPower": 25,
+  "GetBlessRes": 30,
+  "Getspeed": 20,
+  "name": "063_Aki",
+  "hideFlags": 0
+}

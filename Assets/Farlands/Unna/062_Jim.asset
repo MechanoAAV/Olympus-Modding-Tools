@@ -27,12 +27,12 @@ MonoBehaviour:
   WeightClass: 0
   Portrait: {fileID: 21300000, guid: 2ba6a2d882bf5df4c9434368dbae9b7d, type: 3}
   Size: 1
-  MaxHP: 82
+  MaxHP: 92
   Attack: 30
   BlessPower: 10
-  Defense: 20
+  Defense: 25
   BlessRes: 40
-  Speed: 12
+  Speed: 16
   AssistMovesRef:
   - Saw
   AssistMoves:
