@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Aureole
   m_EditorClassIdentifier: Assembly-CSharp::SteamWorksItem
   updateItemParams:
-    ItemID: 0
+    ItemID: 3692493674
     ItemName: Aureole - Wings of Hope
     ItemDescription: 'Ramila and Ryleth descend from the sky to duke it out!
 
