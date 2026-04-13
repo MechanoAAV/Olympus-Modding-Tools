@@ -1,9 +1,27 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.3.9f1
-CRC: 2484015171
+CRC: 7831075
 HashAppended: 0
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: flatworld/unna/unna
+      Name: unifiedraytracing
+      Dependencies: {}
+    Info_1:
+      Name: mymod/move/move
+      Dependencies: {}
+    Info_2:
+      Name: aureole/move/move
+      Dependencies: {}
+    Info_3:
+      Name: farlands/stage/stage
+      Dependencies: {}
+    Info_4:
+      Name: farlands/oly/oly
+      Dependencies: {}
+    Info_5:
+      Name: aureole/oly/oly
+      Dependencies: {}
+    Info_6:
+      Name: flatworld/oly/oly
       Dependencies: {}

@@ -15,7 +15,7 @@ public enum GameMode
 {
     Light, Heavy, SuperHeavy, Free
 }
-[CreateAssetMenu(fileName = "Unna_", menuName = "Unna/Unna")]
+[CreateAssetMenu(fileName = "Oly_", menuName = "Oly/Oly")]
 public class UnnaSO : ModAsset
 {
     public int Index;
@@ -95,14 +95,14 @@ public class UnnaSO : ModAsset
             Abilities[i] = CreateInstance<AbilityGeneric>();
             Abilities[i].name = AbilitiesRef[i];
         }
-        string path = Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}/{name.ToLower()}.txt";
+        string path = Application.streamingAssetsPath + $"/{ModName}/Oly/{name.ToLower()}/{name.ToLower()}.txt";
 
-        if (!File.Exists(path) || !Directory.Exists(Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}"))
+        if (!File.Exists(path) || !Directory.Exists(Application.streamingAssetsPath + $"/{ModName}/Oly/{name.ToLower()}"))
         {
-            Directory.CreateDirectory(Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}");
+            Directory.CreateDirectory(Application.streamingAssetsPath + $"/{ModName}/Oly/{name.ToLower()}");
             File.Create(path).Dispose();
         }
-        File.WriteAllBytes(Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}/{name.ToLower()}_icon.png", ImageConversion.EncodeToPNG(Portrait.texture));
+        File.WriteAllBytes(Application.streamingAssetsPath + $"/{ModName}/Oly/{name.ToLower()}/{name.ToLower()}_icon.png", ImageConversion.EncodeToPNG(Portrait.texture));
         var settings = new JsonSerializerSettings();
         settings.Converters.Add(new TypeRefJsonConverter());
         settings.Converters.Add(new NewtonsoftMoveGOConverter());
@@ -119,11 +119,11 @@ public class UnnaSO : ModAsset
     void SaveMJSon()
     {
         Debug.Log(name);
-        string path = Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}/{name.ToLower()}_mdata.txt";
+        string path = Application.streamingAssetsPath + $"/{ModName}/Oly/{name.ToLower()}/{name.ToLower()}_mdata.txt";
 
-        if (!File.Exists(path) || !Directory.Exists(Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}"))
+        if (!File.Exists(path) || !Directory.Exists(Application.streamingAssetsPath + $"/{ModName}/Oly/{name.ToLower()}"))
         {
-            Directory.CreateDirectory(Application.streamingAssetsPath + $"/{ModName}/Unna/{name.ToLower()}");
+            Directory.CreateDirectory(Application.streamingAssetsPath + $"/{ModName}/Oly/{name.ToLower()}");
             File.Create(path).Dispose();
         }
         File.WriteAllText(path, JsonUtility.ToJson(_mData, true));
