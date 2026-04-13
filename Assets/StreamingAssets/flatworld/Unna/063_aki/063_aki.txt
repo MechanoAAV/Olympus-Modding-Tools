@@ -2,26 +2,32 @@
   "Index": 63,
   "Name": "Aki",
   "TypingRef": [
-    "neutral"
+    "none"
   ],
   "Typing": [
     {
-      "TypeName": "neutral"
+      "TypeName": "none"
     }
   ],
-  "AbilitiesRef": [],
-  "Abilities": [],
+  "AbilitiesRef": [
+    "generic"
+  ],
+  "Abilities": [
+    {
+      "AbilityName": "generic"
+    }
+  ],
   "WeightClass": 0,
   "Portrait": {
     "SpriteName": "aki"
   },
   "Size": 1.0,
-  "MaxHP": 86,
-  "Attack": 41,
-  "BlessPower": 25,
-  "Defense": 27,
-  "BlessRes": 30,
-  "Speed": 20,
+  "MaxHP": 88,
+  "Attack": 44,
+  "BlessPower": 30,
+  "Defense": 30,
+  "BlessRes": 37,
+  "Speed": 23,
   "AssistMovesRef": [
     "stab",
     "saw",
@@ -94,13 +100,13 @@
   ],
   "ModName": "flatworld",
   "ModID": 3677982039,
-  "GetBST": 229,
-  "GetHP": 86,
-  "Getattack": 41,
-  "Getdefense": 27,
-  "GetBlessPower": 25,
-  "GetBlessRes": 30,
-  "Getspeed": 20,
+  "GetBST": 252,
+  "GetHP": 88,
+  "Getattack": 44,
+  "Getdefense": 30,
+  "GetBlessPower": 30,
+  "GetBlessRes": 37,
+  "Getspeed": 23,
   "name": "063_Aki",
   "hideFlags": 0
 }

@@ -1,1 +1,28 @@
-{"Name":6273327104,"SelectedCard":0,"SubName":"Ramila"}
+{
+  "Name": {
+    "TableReference": "TrainerNames",
+    "Key": "Ramila",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "Ramila"
+      },
+      {
+        "Locale": "es",
+        "Value": "Ramila"
+      }
+    ]
+  },
+  "SubName": "Ramila",
+  "Card": {
+    "SpriteName": ""
+  },
+  "CardSelection": 0,
+  "Portrait": {
+    "SpriteName": "ui_ProfileRamila"
+  },
+  "ModName": "aureole",
+  "ModID": 3659215020,
+  "name": "Trnr_Ramila",
+  "hideFlags": 0
+}

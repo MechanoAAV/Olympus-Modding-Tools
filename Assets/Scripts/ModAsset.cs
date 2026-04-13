@@ -402,23 +402,37 @@ public class LocalizedStringJsonConverter : JsonConverter<LocalizedString>
     public override void WriteJson(JsonWriter writer, LocalizedString value, JsonSerializer serializer)
     {
         List<JObject> data = new();
-        for (int i = 0; i < LocalizationSettings.AvailableLocales.Locales.Count; i++)
+        if (!value.IsEmpty)
         {
-            value.LocaleOverride = LocalizationSettings.AvailableLocales.Locales[i];
-            JObject objEntry = new
-               (
-                   new JProperty("Locale", LocalizationSettings.AvailableLocales.Locales[i].Identifier.Code),
-                   new JProperty("Value", value.GetLocalizedString())
-               );
-            data.Add(objEntry);
+
+            for (int i = 0; i < LocalizationSettings.AvailableLocales.Locales.Count; i++)
+            {
+                value.LocaleOverride = LocalizationSettings.AvailableLocales.Locales[i];
+                JObject objEntry = new
+                   (
+                       new JProperty("Locale", LocalizationSettings.AvailableLocales.Locales[i].Identifier.Code),
+                       new JProperty("Value", value.GetLocalizedString())
+                   );
+                data.Add(objEntry);
+            }
+            JObject obj = new
+                   (
+                       new JProperty("TableReference", value.TableReference.TableCollectionName),
+                       new JProperty("Key", value.TableEntryReference.ResolveKeyName(LocalizationSettings.Instance.GetStringDatabase().GetTable(value.TableReference.TableCollectionName).SharedData)),
+                       new JProperty("LocalizData", data)
+                   );
+            obj.WriteTo(writer);
         }
-        JObject obj = new
-               (
-                   new JProperty("TableReference", value.TableReference.TableCollectionName),
-                   new JProperty("Key", value.TableEntryReference.ResolveKeyName(LocalizationSettings.Instance.GetStringDatabase().GetTable(value.TableReference.TableCollectionName).SharedData)),
-                   new JProperty("LocalizData", data)
-               );
-        obj.WriteTo(writer);
+        else
+        {
+            JObject obj = new
+                   (
+                       new JProperty("TableReference", string.Empty),
+                       new JProperty("Key", string.Empty),
+                       new JProperty("LocalizData", data)
+                   );
+            obj.WriteTo(writer);
+        }
     }
 }
 #if UNITY_EDITOR

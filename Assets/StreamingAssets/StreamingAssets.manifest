@@ -1,12 +1,9 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.3.9f1
-CRC: 1276587731
+CRC: 2484015171
 HashAppended: 0
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: aureole/unna/unna
-      Dependencies: {}
-    Info_1:
-      Name: aureole/move/move
+      Name: flatworld/unna/unna
       Dependencies: {}

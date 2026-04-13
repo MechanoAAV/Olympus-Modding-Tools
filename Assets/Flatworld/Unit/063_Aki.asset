@@ -17,20 +17,22 @@ MonoBehaviour:
   Index: 63
   Name: Aki
   TypingRef:
-  - neutral
+  - none
   Typing:
   - {fileID: 0}
-  AbilitiesRef: []
-  Abilities: []
+  AbilitiesRef:
+  - generic
+  Abilities:
+  - {fileID: 0}
   WeightClass: 0
   Portrait: {fileID: 21300000, guid: 4f8a978b32eca724ebb2044703e9dbcf, type: 3}
   Size: 1
-  MaxHP: 86
-  Attack: 41
-  BlessPower: 25
-  Defense: 27
-  BlessRes: 30
-  Speed: 20
+  MaxHP: 88
+  Attack: 44
+  BlessPower: 30
+  Defense: 30
+  BlessRes: 37
+  Speed: 23
   AssistMovesRef:
   - stab
   - saw

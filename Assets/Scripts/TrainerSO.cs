@@ -18,14 +18,12 @@ public class TrainerSO : ModAsset
 #if UNITY_EDITOR
    public override void PrintJson()
     {
-        TrainerJson json = new()
-        {
-            Name = Name.TableEntryReference.KeyId,
-            SubName = SubName,
-            SelectedCard=CardSelection
-        };
         string path = $"{Application.streamingAssetsPath}/{ModName}/Trainer/{name}/{name}.txt";
-        var jsonValue = JsonConvert.SerializeObject(json);
+        var settings = new JsonSerializerSettings();
+        settings.Converters.Add(new LocalizedStringJsonConverter());
+        settings.Converters.Add(new SpriteRefJsonConverter());
+        settings.Formatting = Formatting.Indented;
+        var jsonValue = JsonConvert.SerializeObject(this, settings);
         if (!Directory.Exists($"{Application.streamingAssetsPath}/{ModName}/Trainer"))
             Directory.CreateDirectory($"{Application.streamingAssetsPath}/{ModName}/Trainer");
         if (!Directory.Exists($"{Application.streamingAssetsPath}/{ModName}/Trainer/{name.ToLower()}"))
@@ -41,11 +39,4 @@ public class TrainerSO : ModAsset
         File.WriteAllText(path, jsonValue);
     }
 #endif
-}
-[System.Serializable]
-public struct TrainerJson
-{
-    public long Name;
-    public int SelectedCard;
-    public string SubName;
 }
