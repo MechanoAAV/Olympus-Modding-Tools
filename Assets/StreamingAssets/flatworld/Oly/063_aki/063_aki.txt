@@ -1,12 +1,39 @@
 {
   "Index": 63,
-  "Name": "Aki",
-  "TypingRef": [
-    "none"
+  "Name": {
+    "TableReference": "OlyNames",
+    "Key": "Aki",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "Aki"
+      },
+      {
+        "Locale": "es",
+        "Value": "Aki"
+      }
+    ]
+  },
+  "Descr": {
+    "TableReference": "OlyNames",
+    "Key": "AkiDescr",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "Swordmaster from another dimension."
+      },
+      {
+        "Locale": "es",
+        "Value": "Swordmaster from another dimension."
+      }
+    ]
+  },
+  "GroupsRef": [
+    "neutral"
   ],
   "Typing": [
     {
-      "TypeName": "none"
+      "TypeName": "neutral"
     }
   ],
   "AbilitiesRef": [

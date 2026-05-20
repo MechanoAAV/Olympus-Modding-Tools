@@ -70,6 +70,10 @@ public class BattleAnimationEvents : MonoBehaviour
         }
         _source.Play();
     }
+    public void DieEffect()
+    {
+        
+    }
     public void SpawnDamageFX()
     {
         SpawnDamage?.Invoke();

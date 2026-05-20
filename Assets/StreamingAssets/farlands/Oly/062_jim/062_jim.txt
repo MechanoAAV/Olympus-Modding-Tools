@@ -1,12 +1,39 @@
 {
   "Index": 62,
-  "Name": "Jim",
-  "TypingRef": [
-    "None"
+  "Name": {
+    "TableReference": "OlyNames",
+    "Key": "Jim",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "Jim"
+      },
+      {
+        "Locale": "es",
+        "Value": "Jim"
+      }
+    ]
+  },
+  "Descr": {
+    "TableReference": "OlyNames",
+    "Key": "JimDescr",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "Laid back farmer from across the galaxy."
+      },
+      {
+        "Locale": "es",
+        "Value": "Laid back farmer from across the galaxy."
+      }
+    ]
+  },
+  "GroupsRef": [
+    "neutral"
   ],
   "Typing": [
     {
-      "TypeName": "None"
+      "TypeName": "neutral"
     }
   ],
   "AbilitiesRef": [

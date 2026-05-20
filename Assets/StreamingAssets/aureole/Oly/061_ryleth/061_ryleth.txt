@@ -1,7 +1,34 @@
 {
   "Index": 61,
-  "Name": "Ryleth",
-  "TypingRef": [
+  "Name": {
+    "TableReference": "OlyNames",
+    "Key": "Ryleth",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "Ryleth"
+      },
+      {
+        "Locale": "es",
+        "Value": "Ryleth"
+      }
+    ]
+  },
+  "Descr": {
+    "TableReference": "OlyNames",
+    "Key": "RylethDescr",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "An angel?"
+      },
+      {
+        "Locale": "es",
+        "Value": "An angel?"
+      }
+    ]
+  },
+  "GroupsRef": [
     "light"
   ],
   "Typing": [

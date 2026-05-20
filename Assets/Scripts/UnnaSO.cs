@@ -1,16 +1,12 @@
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 
 #if UNITY_EDITOR
-using UnityEditor;
-using UnityEditor.Search;
 #endif
 using UnityEngine;
-using UnityEngine.Serialization;
+using UnityEngine.Localization;
 public enum GameMode
 {
     Light, Heavy, SuperHeavy, Free
@@ -19,9 +15,9 @@ public enum GameMode
 public class UnnaSO : ModAsset
 {
     public int Index;
-    public string Name;
-    //[SerializeField] LocalizedString description;
-    public string[] TypingRef;
+    public LocalizedString Name;
+    public LocalizedString Descr;
+    public string[] GroupsRef;
     [HideInInspector]
     public TypesSO[] Typing;
     public string[] AbilitiesRef;
@@ -83,11 +79,11 @@ public class UnnaSO : ModAsset
             AssistMoves[i] = CreateInstance<MoveSO>();
             AssistMoves[i].name = AssistMovesRef[i];
         }
-        Typing = new TypesSO[TypingRef.Length];
+        Typing = new TypesSO[GroupsRef.Length];
         for (int i = 0; i < Typing.Length; i++)
         {
             Typing[i] = CreateInstance<TypesSO>();
-            Typing[i].name = TypingRef[i];
+            Typing[i].name = GroupsRef[i];
         }
         Abilities = new AbilityBase[AbilitiesRef.Length];
         for (int i = 0; i < Abilities.Length; i++)
@@ -108,6 +104,7 @@ public class UnnaSO : ModAsset
         settings.Converters.Add(new NewtonsoftMoveGOConverter());
         settings.Converters.Add(new SpriteRefJsonConverter());
         settings.Converters.Add(new MoveSOJsonConverter());
+        settings.Converters.Add(new LocalizedStringJsonConverter());
         settings.Converters.Add(new UnnaPresetJsonConverter());
         settings.Converters.Add(new ModifierSOJsonConverter());
         settings.Converters.Add(new AbilityJsonConverter());

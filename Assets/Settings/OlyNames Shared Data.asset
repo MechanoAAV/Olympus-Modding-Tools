@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: OlyNames Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: OlyNames
+  m_TableCollectionNameGuidString: c0b86669230c2f44897d7559b507a9bb
+  m_Entries:
+  - m_Id: 6109749248
+    m_Key: Jim
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15823757312
+    m_Key: JimDescr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27525865472
+    m_Key: Aki
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41807470592
+    m_Key: AkiDescr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53853511680
+    m_Key: Ryleth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78767677440
+    m_Key: RylethDescr
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8067735112969879618
+  references:
+    version: 2
+    RefIds:
+    - rid: 8067735112969879618
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1776343666762

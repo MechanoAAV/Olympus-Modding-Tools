@@ -15,9 +15,26 @@ MonoBehaviour:
   ModName: flatworld
   ModID: 3677982039
   Index: 63
-  Name: Aki
-  TypingRef:
-  - none
+  Name:
+    m_TableReference:
+      m_TableCollectionName: GUID:c0b86669230c2f44897d7559b507a9bb
+    m_TableEntryReference:
+      m_KeyId: 27525865472
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  Descr:
+    m_TableReference:
+      m_TableCollectionName: GUID:c0b86669230c2f44897d7559b507a9bb
+    m_TableEntryReference:
+      m_KeyId: 41807470592
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  GroupsRef:
+  - neutral
   Typing:
   - {fileID: 0}
   AbilitiesRef:
@@ -130,3 +147,6 @@ MonoBehaviour:
     MaterialEmmissionMinMax: {x: 0, y: 0}
     MaterialEmmissionSpeed: 0
     MaterialEmmissionColor: 0
+  references:
+    version: 2
+    RefIds: []

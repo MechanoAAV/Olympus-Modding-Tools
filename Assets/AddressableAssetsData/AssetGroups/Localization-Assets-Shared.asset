@@ -30,6 +30,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0b86669230c2f44897d7559b507a9bb
+    m_Address: Assets/Settings/OlyNames Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d813f301274647e438fde257d24b67b2
     m_Address: Assets/Settings/StageNames Shared Data.asset
     m_ReadOnly: 1
