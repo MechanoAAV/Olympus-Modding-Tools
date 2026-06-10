@@ -1,5 +1,5 @@
 {
-  "Index": 62,
+  "Index": 0,
   "Name": {
     "TableReference": "OlyNames",
     "Key": "Jim",
@@ -31,7 +31,7 @@
   "GroupsRef": [
     "neutral"
   ],
-  "Typing": [
+  "Groups": [
     {
       "TypeName": "neutral"
     }
@@ -114,6 +114,6 @@
   "GetBlessPower": 10,
   "GetBlessRes": 40,
   "Getspeed": 16,
-  "name": "062_Jim",
+  "name": "Jim",
   "hideFlags": 0
 }

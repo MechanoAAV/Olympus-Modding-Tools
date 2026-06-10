@@ -1,5 +1,5 @@
 {
-  "Index": 63,
+  "Index": 0,
   "Name": {
     "TableReference": "OlyNames",
     "Key": "Aki",
@@ -31,7 +31,7 @@
   "GroupsRef": [
     "neutral"
   ],
-  "Typing": [
+  "Groups": [
     {
       "TypeName": "neutral"
     }
@@ -134,6 +134,6 @@
   "GetBlessPower": 30,
   "GetBlessRes": 37,
   "Getspeed": 23,
-  "name": "063_Aki",
+  "name": "Aki",
   "hideFlags": 0
 }

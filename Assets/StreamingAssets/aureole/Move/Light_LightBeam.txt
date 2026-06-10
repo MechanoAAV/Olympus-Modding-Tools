@@ -36,10 +36,10 @@
   "FXPrefabRef": "LightBeamFX",
   "DamageFXPrefabRef": "LightBeamDamageFX",
   "BundlePath": "",
-  "Type": {
+  "Group": {
     "TypeName": "light"
   },
-  "TypeRef": "light",
+  "GroupRef": "light",
   "Power": 60.0,
   "BlessPower": 90.0,
   "HitTimes": 1,

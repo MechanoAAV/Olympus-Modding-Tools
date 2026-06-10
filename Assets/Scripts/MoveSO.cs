@@ -23,8 +23,8 @@ public class MoveSO : ModAsset
     [HideInInspector]
     public string BundlePath;
     [HideInInspector]
-    public GroupSO Type;
-    public string TypeRef;
+    public GroupSO Group;
+    public string GroupRef;
     public float Power = 20;
     [Range(0, 100)] public float BlessPower;
     [Range(0, 5)] public int HitTimes = 1;
@@ -61,8 +61,8 @@ public class MoveSO : ModAsset
             DamageFXPrefabRef = DamageFXPrefab.name;
         if (FXPrefab)
             FXPrefabRef = FXPrefab.name;
-        Type = CreateInstance<GroupSO>();
-        Type.name = TypeRef;
+        Group = CreateInstance<GroupSO>();
+        Group.name = GroupRef;
         MoveEffect = CreateInstance<MoveNormal>();
         MoveEffect.name = MoveEffectRef;
         var settings = new JsonSerializerSettings();

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea904292d04fd664ab28935198871ef8, type: 3}
-  m_Name: 062_Jim
+  m_Name: Jim
   m_EditorClassIdentifier: Scripts::UnnaSO
   ModName: farlands
   ModID: 3656797813
-  Index: 62
+  Index: 0
   Name:
     m_TableReference:
       m_TableCollectionName: GUID:c0b86669230c2f44897d7559b507a9bb
@@ -35,7 +35,7 @@ MonoBehaviour:
     m_LocalVariables: []
   GroupsRef:
   - neutral
-  Typing:
+  Groups:
   - {fileID: 0}
   AbilitiesRef:
   - Generic

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea904292d04fd664ab28935198871ef8, type: 3}
-  m_Name: 063_Aki
+  m_Name: Aki
   m_EditorClassIdentifier: Assembly-CSharp::UnnaSO
   ModName: flatworld
   ModID: 3677982039
-  Index: 63
+  Index: 0
   Name:
     m_TableReference:
       m_TableCollectionName: GUID:c0b86669230c2f44897d7559b507a9bb
@@ -35,7 +35,7 @@ MonoBehaviour:
     m_LocalVariables: []
   GroupsRef:
   - neutral
-  Typing:
+  Groups:
   - {fileID: 0}
   AbilitiesRef:
   - generic

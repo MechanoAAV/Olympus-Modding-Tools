@@ -37,8 +37,8 @@ MonoBehaviour:
   FXPrefabRef: LightBeamFX
   DamageFXPrefabRef: LightBeamDamageFX
   BundlePath: 
-  Type: {fileID: 0}
-  TypeRef: light
+  Group: {fileID: 0}
+  GroupRef: light
   Power: 60
   BlessPower: 90
   HitTimes: 1
