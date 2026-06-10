@@ -12,14 +12,14 @@ public enum GameMode
     Light, Heavy, SuperHeavy, Free
 }
 [CreateAssetMenu(fileName = "Oly_", menuName = "Oly/Oly")]
-public class UnnaSO : ModAsset
+public class OlySO : ModAsset
 {
     public int Index;
     public LocalizedString Name;
     public LocalizedString Descr;
     public string[] GroupsRef;
     [HideInInspector]
-    public TypesSO[] Typing;
+    public GroupSO[] Groups;
     public string[] AbilitiesRef;
     [HideInInspector]
     public AbilityBase[] Abilities;
@@ -79,11 +79,11 @@ public class UnnaSO : ModAsset
             AssistMoves[i] = CreateInstance<MoveSO>();
             AssistMoves[i].name = AssistMovesRef[i];
         }
-        Typing = new TypesSO[GroupsRef.Length];
-        for (int i = 0; i < Typing.Length; i++)
+        Groups = new GroupSO[GroupsRef.Length];
+        for (int i = 0; i < Groups.Length; i++)
         {
-            Typing[i] = CreateInstance<TypesSO>();
-            Typing[i].name = GroupsRef[i];
+            Groups[i] = CreateInstance<GroupSO>();
+            Groups[i].name = GroupsRef[i];
         }
         Abilities = new AbilityBase[AbilitiesRef.Length];
         for (int i = 0; i < Abilities.Length; i++)

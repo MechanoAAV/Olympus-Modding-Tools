@@ -28,13 +28,13 @@ MonoBehaviour:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 660bc2bf65ab5f14ba375545c4b164cb
-    m_Address: TypeNames_en
+    m_Address: GroupNames_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7646564f23ff54d4b81b7c127d8516a4
-    m_Address: TrainerNames_en
+    m_Address: RangerNames_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

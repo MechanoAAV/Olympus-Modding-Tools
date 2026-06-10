@@ -77,7 +77,7 @@
   "Accuracy": 100,
   "Accurate": false,
   "ModName": "aureole",
-  "ModID": 3659215020,
+  "ModID": 3692493674,
   "IsCustom": false,
   "name": "Light_LightBeam",
   "hideFlags": 0

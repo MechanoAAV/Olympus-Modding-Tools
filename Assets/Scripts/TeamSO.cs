@@ -7,60 +7,33 @@ using UnityEditor.Search;
 #endif
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering;
+using static LocalizedStringJsonConverter;
 
 [CreateAssetMenu(fileName = "TeamSO_", menuName = "Level/TeamSO")]
 public class TeamSO : ModAsset
 {
     public TeamTypes Type;
     public GameMode Category;
-    public TrainerSO Owner;
-    public string AI;
-    public UnnaSaveData Lead;
-    public UnnaSaveData Second;
-    public UnnaSaveData Third;
-    public UnnaSaveData Ace;
-    public List<UnnaSaveData> Members
-    {
-        get
-        {
-            List<UnnaSaveData> members = new()
-            {
-                Lead,
-                Second,
-                Third,
-                Ace
-            };
-            return members;
-        } 
-    }
+    public RangerSO Owner;
+    [HideInInspector]
+    public OpponentAISO AI; 
+    public string AIRef; 
+    public List<UnnaSaveData> team;
+   
 #if UNITY_EDITOR
     public override void PrintJson()
     {
         UpdateName();
         Debug.ClearDeveloperConsole();
-        TeamJson json = new()
-        {
-            Category = Category,
-            TeamType = Type,
-            Owner = Owner.name,
-            AI = AI,
-            Members = new()
-            {
-                Lead,
-                Second,
-                Third,
-                Ace
-            }
-        };
         string path = $"{Application.streamingAssetsPath}/{ModName}/Team/{name}.txt";
         var settings = new JsonSerializerSettings();
         settings.Converters.Add(new UnnaSaveDataJsonConverter());
-        var jsonValue = JsonConvert.SerializeObject(json, Formatting.Indented, settings);
+        settings.Converters.Add(new RangerSOJsonConverter());
+        var jsonValue = JsonConvert.SerializeObject(this, Formatting.Indented, settings);
         Debug.Log(jsonValue);
         if (!Directory.Exists($"{Application.streamingAssetsPath}/{ModName}/Team"))
             Directory.CreateDirectory($"{Application.streamingAssetsPath}/{ModName}/Team");
-        if (File.Exists(path))File.Delete(path);
+        if (File.Exists(path)) File.Delete(path);
         File.WriteAllText(path, jsonValue);
     }
     void UpdateName()

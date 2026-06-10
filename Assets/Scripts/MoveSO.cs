@@ -23,7 +23,7 @@ public class MoveSO : ModAsset
     [HideInInspector]
     public string BundlePath;
     [HideInInspector]
-    public TypesSO Type;
+    public GroupSO Type;
     public string TypeRef;
     public float Power = 20;
     [Range(0, 100)] public float BlessPower;
@@ -61,7 +61,7 @@ public class MoveSO : ModAsset
             DamageFXPrefabRef = DamageFXPrefab.name;
         if (FXPrefab)
             FXPrefabRef = FXPrefab.name;
-        Type = CreateInstance<TypesSO>();
+        Type = CreateInstance<GroupSO>();
         Type.name = TypeRef;
         MoveEffect = CreateInstance<MoveNormal>();
         MoveEffect.name = MoveEffectRef;

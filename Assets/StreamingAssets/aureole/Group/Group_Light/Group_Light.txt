@@ -1,0 +1,40 @@
+{
+  "Name": {
+    "TableReference": "GroupNames",
+    "Key": "Light",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "Light"
+      },
+      {
+        "Locale": "es",
+        "Value": "Luz"
+      }
+    ]
+  },
+  "IncomingAttackChart": [
+    {
+      "type": "foul",
+      "Multiplier": 0.0
+    },
+    {
+      "type": "mythical",
+      "Multiplier": 0.5
+    }
+  ],
+  "Color": {
+    "r": 1.0,
+    "g": 0.926142454,
+    "b": 0.2951482,
+    "a": 1.0
+  },
+  "Icon": {
+    "SpriteName": ""
+  },
+  "GroundedImmunity": false,
+  "ModName": "aureole",
+  "ModID": 3692493674,
+  "name": "Group_Light",
+  "hideFlags": 0
+}

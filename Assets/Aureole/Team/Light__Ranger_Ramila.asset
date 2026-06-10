@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd05b287aca84c4b878b070304d490b, type: 3}
+  m_Name: Light__Ranger_Ramila
+  m_EditorClassIdentifier: Assembly-CSharp::TeamSO
+  ModName: aureole
+  ModID: 3692493674
+  Type: 4
+  Category: 0
+  Owner: {fileID: 11400000, guid: 414ade441d6f8ab4c9ee36fde13f3b05, type: 2}
+  AI: {fileID: 0}
+  AIRef: 
+  team:
+  - name: boxyglorm
+    modifier: fastbp
+    ability: 0
+    assist: 0
+    learntMoves: []
+    StatReinforcement: []
+  - name: koddish
+    modifier: rocky
+    ability: 0
+    assist: 0
+    learntMoves: []
+    StatReinforcement: []
+  - name: liwalker
+    modifier: floaties
+    ability: 0
+    assist: 0
+    learntMoves: []
+    StatReinforcement: []
+  - name: ryleth
+    modifier: hardA
+    ability: 0
+    assist: 0
+    learntMoves:
+    - lightbeam
+    - dash
+    - screech
+    StatReinforcement:
+    - stat: 2
+      boost: 4
+    - stat: 3
+      boost: 4
+    - stat: 7
+      boost: 2

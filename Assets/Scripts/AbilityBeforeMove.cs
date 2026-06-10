@@ -6,7 +6,7 @@ public class AbilityBeforeMove : AbilityBase
     public int _timeToHitMult = 1;
     public float _abilityModifier;
     public ConditionToApplyAbilityModifier _condition;
-    public TypesSO _class;
+    public GroupSO _class;
 }
     [Serializable]
     public struct ConditionToApplyAbilityModifier

@@ -1,0 +1,123 @@
+{
+  "Index": 0,
+  "Name": {
+    "TableReference": "OlyNames",
+    "Key": "Ryleth",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "Ryleth"
+      },
+      {
+        "Locale": "es",
+        "Value": "Ryleth"
+      }
+    ]
+  },
+  "Descr": {
+    "TableReference": "OlyNames",
+    "Key": "RylethDescr",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "An angel?"
+      },
+      {
+        "Locale": "es",
+        "Value": "An angel?"
+      }
+    ]
+  },
+  "GroupsRef": [
+    "light"
+  ],
+  "Groups": [
+    {
+      "TypeName": "light"
+    }
+  ],
+  "AbilitiesRef": [
+    "snowball"
+  ],
+  "Abilities": [
+    {
+      "AbilityName": "snowball"
+    }
+  ],
+  "WeightClass": 0,
+  "Portrait": {
+    "SpriteName": "ryleth_icon"
+  },
+  "Size": 1.0,
+  "MaxHP": 50,
+  "Attack": 35,
+  "BlessPower": 44,
+  "Defense": 24,
+  "BlessRes": 24,
+  "Speed": 70,
+  "AssistMovesRef": [
+    "motor"
+  ],
+  "AssistMoves": [
+    {
+      "MoveName": "motor"
+    }
+  ],
+  "LearnableMovesRef": [
+    "LightBeam",
+    "Tackle",
+    "Stomp",
+    "dash",
+    "screech"
+  ],
+  "LearnableMoves": [
+    {
+      "MoveName": "LightBeam"
+    },
+    {
+      "MoveName": "Tackle"
+    },
+    {
+      "MoveName": "Stomp"
+    },
+    {
+      "MoveName": "dash"
+    },
+    {
+      "MoveName": "screech"
+    }
+  ],
+  "Presets": [
+    {
+      "PresetName": "01",
+      "UnnaPresetName": "ryleth",
+      "UnnaPresetAbility": 0,
+      "UnnaPresetAssist": 0,
+      "UnnaPresetModifier": "vital10",
+      "UnnaPresetStats": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        4
+      ],
+      "UnnaPresetMoves": [
+        "Tackle",
+        "LightBeam",
+        "Stomp"
+      ]
+    }
+  ],
+  "ModName": "aureole",
+  "ModID": 3692493674,
+  "GetBST": 247,
+  "GetHP": 50,
+  "Getattack": 35,
+  "Getdefense": 24,
+  "GetBlessPower": 44,
+  "GetBlessRes": 24,
+  "Getspeed": 70,
+  "name": "Ryleth",
+  "hideFlags": 0
+}

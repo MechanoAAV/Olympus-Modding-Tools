@@ -222,14 +222,14 @@ public class SpriteRefJsonConverter : JsonConverter<Sprite>
         obj.WriteTo(writer);
     }
 }
-public class TypeRefJsonConverter : JsonConverter<TypesSO>
+public class TypeRefJsonConverter : JsonConverter<GroupSO>
 {
-    public override TypesSO ReadJson(JsonReader reader, Type objectType, TypesSO existingValue, bool hasExistingValue, JsonSerializer serializer)
+    public override GroupSO ReadJson(JsonReader reader, Type objectType, GroupSO existingValue, bool hasExistingValue, JsonSerializer serializer)
     {
         JObject obj = JObject.Load(reader);
         return null;
     }
-    public override void WriteJson(JsonWriter writer, TypesSO value, JsonSerializer serializer)
+    public override void WriteJson(JsonWriter writer, GroupSO value, JsonSerializer serializer)
     {
         JObject obj = new(new JProperty("TypeName", value.name));
         obj.WriteTo(writer);
@@ -269,9 +269,9 @@ public class AbilityJsonConverter : JsonConverter<AbilityBase>
         obj.WriteTo(writer);
     }
 }
-public sealed class UnnaSOJsonConverter : JsonConverter<UnnaSO>
+public sealed class UnnaSOJsonConverter : JsonConverter<OlySO>
 {
-    public override void WriteJson(JsonWriter writer, UnnaSO value, JsonSerializer serializer)
+    public override void WriteJson(JsonWriter writer, OlySO value, JsonSerializer serializer)
     {
         JObject obj = new JObject
         (
@@ -279,7 +279,7 @@ public sealed class UnnaSOJsonConverter : JsonConverter<UnnaSO>
         );
         obj.WriteTo(writer);
     }
-    public override UnnaSO ReadJson(JsonReader reader, Type objectType, UnnaSO existingValue, bool hasExistingValue, JsonSerializer serializer)
+    public override OlySO ReadJson(JsonReader reader, Type objectType, OlySO existingValue, bool hasExistingValue, JsonSerializer serializer)
     {
         JObject obj = JObject.Load(reader);
         return null;
@@ -432,6 +432,22 @@ public class LocalizedStringJsonConverter : JsonConverter<LocalizedString>
                        new JProperty("LocalizData", data)
                    );
             obj.WriteTo(writer);
+        }
+    }
+    public sealed class RangerSOJsonConverter : JsonConverter<RangerSO>
+    {
+        public override void WriteJson(JsonWriter writer, RangerSO value, JsonSerializer serializer)
+        {
+            JObject obj = new JObject
+            (
+                new JProperty("TrainerName", value ? value.name : string.Empty)
+            );
+            obj.WriteTo(writer);
+        }
+        public override RangerSO ReadJson(JsonReader reader, Type objectType, RangerSO existingValue, bool hasExistingValue, JsonSerializer serializer)
+        {
+            JObject obj = JObject.Load(reader);
+            return null;
         }
     }
 }

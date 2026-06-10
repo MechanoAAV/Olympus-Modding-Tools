@@ -9,24 +9,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49611cf9e672082438473b1b5482d0b0, type: 3}
-  m_Name: Ranger_Ramila
-  m_EditorClassIdentifier: Assembly-CSharp::TrainerSO
+  m_Script: {fileID: 11500000, guid: de899f07a75504f41bf943de3f69cbf2, type: 3}
+  m_Name: Group_Light
+  m_EditorClassIdentifier: 
   ModName: aureole
   ModID: 3692493674
   Name:
     m_TableReference:
-      m_TableCollectionName: GUID:1d781aacdab6a1842a92e782dd2b19c0
+      m_TableCollectionName: GUID:6d3dc3957bd99554bbc85f503c19b981
     m_TableEntryReference:
-      m_KeyId: 6273327104
+      m_KeyId: 7338680320
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  SubName: Ramila
-  Card: {fileID: 0}
-  CardSelection: 0
-  Portrait: {fileID: 21300000, guid: 22a54ffef723a0c4b9df3e52c42af709, type: 3}
+  IncomingAttackChart:
+  - type: foul
+    Multiplier: 0
+  - type: mythical
+    Multiplier: 0.5
+  Color: {r: 1, g: 0.92614245, b: 0.2951482, a: 1}
+  Icon: {fileID: 0}
+  GroundedImmunity: 0
   references:
     version: 2
     RefIds: []

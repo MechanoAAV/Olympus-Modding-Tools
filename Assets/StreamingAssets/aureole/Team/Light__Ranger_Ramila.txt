@@ -4,7 +4,8 @@
   "Owner": {
     "TrainerName": "Ranger_Ramila"
   },
-  "AI": "master",
+  "AI": null,
+  "AIRef": "",
   "team": [
     {
       "UnnaSaveName": "boxyglorm",
@@ -73,6 +74,6 @@
   ],
   "ModName": "aureole",
   "ModID": 3692493674,
-  "name": "Light_master_Ranger_Ramila",
+  "name": "Light__Ranger_Ramila",
   "hideFlags": 0
 }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CustomizSO_Hair
   m_EditorClassIdentifier: Assembly-CSharp::CustomizSO
   ModName: aureole
-  ModID: 3659215020
+  ModID: 3692493674
   State: 8
   Options:
   - {fileID: 2800000, guid: 45deb7a25192d854398eb8a4ea7998ab, type: 3}

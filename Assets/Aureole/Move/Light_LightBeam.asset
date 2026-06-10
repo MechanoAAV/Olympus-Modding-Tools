@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Light_LightBeam
   m_EditorClassIdentifier: Assembly-CSharp::MoveSO
   ModName: aureole
-  ModID: 3659215020
+  ModID: 3692493674
   Name:
     m_TableReference:
       m_TableCollectionName: GUID:28f152fc99e17944392d8732e49a4e06
