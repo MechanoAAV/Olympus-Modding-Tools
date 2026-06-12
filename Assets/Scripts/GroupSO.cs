@@ -12,7 +12,7 @@ public struct TypeTableEntry
     public string type;
     public float Multiplier;
 }
-[CreateAssetMenu(fileName = "Group_", menuName = "Unna/Group")]
+[CreateAssetMenu(fileName = "Group_", menuName = "Oly/Group")]
 public class GroupSO : ModAsset
 {
     public LocalizedString Name;

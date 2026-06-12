@@ -23,8 +23,8 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  Weather: 0
-  BlocksWeather: 1
+  Weather: night
+  BlocksWeather: []
   Icon: {fileID: 21300000, guid: aef46a3ad560caf4eacdf001b561c0a1, type: 3}
   OverrideRainLighting: 0
   ColorSky: {r: 1, g: 1, b: 1, a: 0}

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Linq;
 using UnityEngine;
-[CreateAssetMenu(fileName = "MoveClassEffective_", menuName = "Unna/Move/MoveEffectors/Class")]
+[CreateAssetMenu(fileName = "MoveClassEffective_", menuName = "Oly/Move/MoveEffectors/Class")]
 
 public class MoveClassEffective : MoveEffectBase
 {

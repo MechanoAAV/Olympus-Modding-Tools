@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "MoveSacrifice", menuName = "Unna/Move/MoveEffectors/Sacrifice")]
+[CreateAssetMenu(fileName = "MoveSacrifice", menuName = "Oly/Move/MoveEffectors/Sacrifice")]
 public class MoveSacrifice : MoveEffectBase
 {
 }

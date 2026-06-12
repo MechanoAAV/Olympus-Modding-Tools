@@ -13,8 +13,8 @@
       }
     ]
   },
-  "Weather": 0,
-  "BlocksWeather": true,
+  "Weather": "night",
+  "BlocksWeather": [],
   "Icon": {
     "SpriteName": "stageFarm_icon"
   },

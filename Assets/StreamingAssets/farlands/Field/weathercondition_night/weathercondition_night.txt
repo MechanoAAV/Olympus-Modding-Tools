@@ -1,0 +1,117 @@
+{
+  "Weather": true,
+  "ReverseSpeed": false,
+  "RemoveIfAppliedAgain": false,
+  "Prefab": {
+    "MovePrefabName": ""
+  },
+  "Offset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Icon": {
+    "SpriteName": ""
+  },
+  "OnStartMessage": {
+    "TableReference": "BattleMessages",
+    "Key": "Night_Start",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "It's night time...."
+      },
+      {
+        "Locale": "es",
+        "Value": "Es de noche..."
+      }
+    ]
+  },
+  "OnCureMessage": {
+    "TableReference": "",
+    "Key": "",
+    "LocalizData": []
+  },
+  "OnHurtMessage": {
+    "TableReference": "",
+    "Key": "",
+    "LocalizData": []
+  },
+  "OnHealMessage": {
+    "TableReference": "",
+    "Key": "",
+    "LocalizData": []
+  },
+  "OnSendoutMessage": {
+    "TableReference": "",
+    "Key": "",
+    "LocalizData": []
+  },
+  "TurnDuration": 0,
+  "MinTurnDuration": 0,
+  "Stackable": 0,
+  "HealOpponentAmount": [],
+  "PreventStatusMoves": false,
+  "PreventSwitching": false,
+  "RandomizeMove": false,
+  "BlockPriority": false,
+  "BlockSun": true,
+  "BlockStatusConditions": [],
+  "Recoil": 0.0,
+  "HurtOnSendout": 0.0,
+  "OverrideChosenMove": false,
+  "Position": 0,
+  "groupAttackRemovesField": [
+    "light"
+  ],
+  "groupImmuneField": [],
+  "groupBoostField": [
+    {
+      "Change": 1.5,
+      "Group": "foul"
+    }
+  ],
+  "groupNerfField": [],
+  "groupHealField": [],
+  "groupHurtField": [],
+  "SetField": {
+    "CanBoost": false,
+    "Boosts": [],
+    "CanStatus": false,
+    "Status": [],
+    "CanField": false,
+    "Field": [],
+    "CanWeather": false,
+    "Weather": null
+  },
+  "StatChanges": [],
+  "skyColor": {
+    "r": 0.8557951,
+    "g": 1.0,
+    "b": 0.8747041,
+    "a": 0.0
+  },
+  "equColor": {
+    "r": 0.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 0.0
+  },
+  "groundColor": {
+    "r": 0.137254909,
+    "g": 0.137254909,
+    "b": 0.2784314,
+    "a": 0.0
+  },
+  "fogColor": {
+    "r": 0.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 0.0
+  },
+  "FieldBlockAging": "night",
+  "ModName": "farlands",
+  "ModID": 3656797813,
+  "name": "WeatherCondition_Night",
+  "hideFlags": 0
+}

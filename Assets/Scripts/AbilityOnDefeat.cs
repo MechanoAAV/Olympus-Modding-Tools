@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Ability_", menuName = "Unna/Ability/OnDefeat")]
+[CreateAssetMenu(fileName = "Ability_", menuName = "Oly/Ability/OnDefeat")]
 public class AbilityOnDefeat : AbilityBase
 {
     [SerializeField] AbilityDefeatEffect _effect;

@@ -52,6 +52,7 @@ MonoBehaviour:
   Speed: 70
   AssistMovesRef:
   - motor
+  - lightbeam
   AssistMoves:
   - {fileID: 0}
   LearnableMovesRef:

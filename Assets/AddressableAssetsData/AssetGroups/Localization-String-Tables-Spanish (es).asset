@@ -39,6 +39,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-es
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88971e9301e235a4ca74b53060d568ad
+    m_Address: BattleMessages_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c536161b1e8987d4fbedcd65bfee8a50
     m_Address: RangerNames_es
     m_ReadOnly: 1

@@ -58,9 +58,13 @@ MonoBehaviour:
   CamType: 0
   AttackStateName: beam
   Effects: {fileID: 0}
-  Secondaries: []
+  Secondaries:
+  - _effectData: {fileID: 11400000, guid: 80b46daa43438b34e8fc5bbd115433d2, type: 2}
+    chance: 100
+    target: 1
+    _canTriggerOnAssist: 1
   Accuracy: 100
-  Accurate: 0
+  Accurate: 1
   references:
     version: 2
     RefIds: []

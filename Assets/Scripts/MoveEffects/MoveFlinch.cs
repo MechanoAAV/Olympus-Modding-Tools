@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "MoveFlinch", menuName = "Unna/Move/MoveEffectors/Flinch")]
+[CreateAssetMenu(fileName = "MoveFlinch", menuName = "Oly/Move/MoveEffectors/Flinch")]
 public class MoveFlinch : MoveEffectBase
 {
 }

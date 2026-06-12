@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43dbf7fcb3973144da01570f11c242ea, type: 3}
+  m_Name: WeatherCondition_Night
+  m_EditorClassIdentifier: Assembly-CSharp::FieldconditionSO
+  ModName: farlands
+  ModID: 3656797813
+  Weather: 1
+  ReverseSpeed: 0
+  RemoveIfAppliedAgain: 0
+  Prefab: {fileID: 0}
+  Offset: {x: 0, y: 0, z: 0}
+  Icon: {fileID: 0}
+  OnStartMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:56ad08bf3bd408b4c999f3fcbfcbc24e
+    m_TableEntryReference:
+      m_KeyId: 7321903104
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  OnCureMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  OnHurtMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  OnHealMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  OnSendoutMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  TurnDuration: 0
+  MinTurnDuration: 0
+  Stackable: 0
+  HealOpponentAmount: []
+  PreventStatusMoves: 0
+  PreventSwitching: 0
+  RandomizeMove: 0
+  BlockPriority: 0
+  BlockSun: 1
+  BlockStatusConditions: []
+  Recoil: 0
+  HurtOnSendout: 0
+  OverrideChosenMove: 0
+  Position: 0
+  groupAttackRemovesField:
+  - light
+  groupImmuneField: []
+  groupBoostField:
+  - Change: 1.5
+    Group: foul
+  groupNerfField: []
+  groupHealField: []
+  groupHurtField: []
+  SetField:
+    CanBoost: 0
+    Boosts: []
+    CanStatus: 0
+    Status: []
+    CanField: 0
+    Field: []
+    CanWeather: 0
+    Weather: {fileID: 0}
+  StatChanges: []
+  skyColor: {r: 0.8557951, g: 1, b: 0.8747041, a: 0}
+  equColor: {r: 0, g: 0, b: 0, a: 0}
+  groundColor: {r: 0.13725491, g: 0.13725491, b: 0.2784314, a: 0}
+  fogColor: {r: 0, g: 0, b: 0, a: 0}
+  FieldBlockAging: night
+  references:
+    version: 2
+    RefIds: []

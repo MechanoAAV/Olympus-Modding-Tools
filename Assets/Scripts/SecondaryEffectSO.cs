@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "SecEffectSO_", menuName = "Unna/Move/SecondaryEffect")]
+[CreateAssetMenu(fileName = "SecEffectSO_", menuName = "Oly/Move/SecondaryEffect")]
 public class SecondaryEffectSO : ScriptableObject
 {
     [SerializeField] MoveEffects _effects;

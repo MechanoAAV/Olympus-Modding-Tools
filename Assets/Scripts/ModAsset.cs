@@ -7,7 +7,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine.Localization.Settings;
 using System.Linq;
-using UnityEngine.Rendering;
 
 public class ModAsset : ScriptableObject
 {
@@ -16,6 +15,10 @@ public class ModAsset : ScriptableObject
     public virtual void PrintJson()
     {
 
+    }
+    public virtual string SerializeAsset()
+    {
+        return string.Empty;
     }
 }
 public sealed class UnnaSaveDataJsonConverter : JsonConverter<UnnaSaveData>
@@ -74,6 +77,32 @@ public sealed class UnnaSaveDataJsonConverter : JsonConverter<UnnaSaveData>
         );
         obj.WriteTo(writer);
     }
+    public sealed class NewtonsoftVector3Converter : JsonConverter<Vector3>
+    {
+        public override void WriteJson(JsonWriter writer, Vector3 value, JsonSerializer serializer)
+        {
+            JObject obj = new JObject
+            (
+                new JProperty("x", value.x),
+                new JProperty("y", value.y),
+                new JProperty("z", value.y)
+            );
+
+            obj.WriteTo(writer);
+        }
+
+        public override Vector3 ReadJson(JsonReader reader, Type objectType, Vector3 existingValue, bool hasExistingValue, JsonSerializer serializer)
+        {
+            JObject obj = JObject.Load(reader);
+            return new Vector3
+            (
+                obj.Value<float>("x"),
+                obj.Value<float>("y"),
+                obj.Value<float>("z")
+            );
+        }
+    }
+
     public override UnnaSaveData ReadJson(JsonReader reader, Type objectType, UnnaSaveData existingValue, bool hasExistingValue, JsonSerializer serializer)
     {
         JObject obj = JObject.Load(reader);

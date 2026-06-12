@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Ability_", menuName = "Unna/Ability/BeforeStatus")]
+[CreateAssetMenu(fileName = "Ability_", menuName = "Oly/Ability/BeforeStatus")]
 public class AbilityBeforeStatus : AbilityBase
 {
     [SerializeField] bool _onVolatile;

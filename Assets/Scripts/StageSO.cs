@@ -9,8 +9,8 @@ using UnityEngine.SceneManagement;
 public class StageSO : ModAsset
 {
     public LocalizedString Name;
-    public FieldID Weather;
-    public bool BlocksWeather;
+    public string Weather;
+    public FieldconditionSO[] BlocksWeather;
     public Sprite Icon;
     public bool OverrideRainLighting;
     [Space(20)]

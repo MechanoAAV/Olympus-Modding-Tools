@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Localization;
-[CreateAssetMenu(fileName = "MoveScan", menuName = "Unna/Move/MoveEffectors/Scan")]
+[CreateAssetMenu(fileName = "MoveScan", menuName = "Oly/Move/MoveEffectors/Scan")]
 
 public class MoveScan : MoveEffectBase
 {

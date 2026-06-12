@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-[CreateAssetMenu(fileName = "ModLifeAttack_", menuName = "Unna/Modifier/LifeOnAttack")]
+[CreateAssetMenu(fileName = "ModLifeAttack_", menuName = "Oly/Modifier/LifeOnAttack")]
 public class ModifierHurtOnAttack : ModifierSO
 {
     [Range(0, 50)] public float percent;

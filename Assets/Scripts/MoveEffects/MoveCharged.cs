@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Localization;
 
-[CreateAssetMenu(fileName = "MoveCharged", menuName = "Unna/Move/MoveEffectors/Charged")]
+[CreateAssetMenu(fileName = "MoveCharged", menuName = "Oly/Move/MoveEffectors/Charged")]
 public class MoveCharged : MoveEffectBase
 {
     public int turnsToCharge = 1;

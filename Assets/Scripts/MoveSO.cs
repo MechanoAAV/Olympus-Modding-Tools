@@ -3,12 +3,10 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Net.NetworkInformation;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Localization;
-using UnityEngine.Serialization;
-[CreateAssetMenu(fileName = "Move_", menuName = "Unna/Move/Move")]
+[CreateAssetMenu(fileName = "Move_", menuName = "Oly/Move/Move")]
 
 public class MoveSO : ModAsset
 {
@@ -106,11 +104,11 @@ public struct MoveEffects
     public bool CanBoost;
     public List<StatBoost> Boosts;
     public bool CanStatus;
-    public ConditionID Status;
-    public bool CanVolatileStatus;
-    public ConditionID VStatus;
+    public StatusconditionSO[] Status;
     public bool CanField;
-    public FieldID Field;
+    public FieldconditionSO[] Field;
+    public bool CanWeather;
+    public FieldconditionSO Weather;
 }
 public enum ConditionID
 {

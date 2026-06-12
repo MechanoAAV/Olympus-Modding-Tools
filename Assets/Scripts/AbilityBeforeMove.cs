@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-[CreateAssetMenu(fileName = "Ability_", menuName = "Unna/Ability/BeforeMoveAbility")]
+[CreateAssetMenu(fileName = "Ability_", menuName = "Oly/Ability/BeforeMoveAbility")]
 public class AbilityBeforeMove : AbilityBase
 {
     public int _timeToHitMult = 1;

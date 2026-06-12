@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Localization;
 
-[CreateAssetMenu(fileName = "MoveHeal", menuName = "Unna/Move/MoveEffectors/Heal")]
+[CreateAssetMenu(fileName = "MoveHeal", menuName = "Oly/Move/MoveEffectors/Heal")]
 public class MoveHeal : MoveEffectBase
 {
     public bool recoverDamage;
