@@ -21,6 +21,23 @@ public class ModAsset : ScriptableObject
         return string.Empty;
     }
 }
+public class Texture2DRefJsonConverter : JsonConverter<Texture2D>
+{
+    public override Texture2D ReadJson(JsonReader reader, Type objectType, Texture2D existingValue, bool hasExistingValue, JsonSerializer serializer)
+    {
+        JObject obj = JObject.Load(reader);
+        return null;
+    }
+    public override void WriteJson(JsonWriter writer, Texture2D value, JsonSerializer serializer)
+    {
+        JObject obj = new JObject
+               (
+                   new JProperty("TextureName", value ? value.name : string.Empty)
+               );
+
+        obj.WriteTo(writer);
+    }
+}
 public sealed class UnnaSaveDataJsonConverter : JsonConverter<UnnaSaveData>
 {
     public override void WriteJson(JsonWriter writer, UnnaSaveData value, JsonSerializer serializer)

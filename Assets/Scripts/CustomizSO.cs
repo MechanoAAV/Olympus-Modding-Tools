@@ -1,5 +1,6 @@
 using Newtonsoft.Json;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "CustomizSO_", menuName = "Level/CustomizSO")]
@@ -12,11 +13,10 @@ public class CustomizSO : ModAsset
         string path = Application.streamingAssetsPath + $"/{ModName}/Customization/{name}";
         if (!Directory.Exists(path))
             Directory.CreateDirectory(path);
-        var json = new CustomizJson()
-        {
-            State = State
-        };
-        string content = JsonConvert.SerializeObject(json);
+        var settings = new JsonSerializerSettings();
+        settings.Converters.Add(new Texture2DRefJsonConverter());
+        settings.Formatting = Formatting.Indented;
+        string content = JsonConvert.SerializeObject(this, settings);
         for (int i = 0; i < Options.Length; i++)
         {
             if (Options[i])
@@ -24,11 +24,6 @@ public class CustomizSO : ModAsset
         }
         File.WriteAllText(path + $"/{name}.txt", content);
     }
-}
-[System.Serializable]
-public struct CustomizJson
-{
-    public CustomizState State;
 }
 public enum CustomizState
 {
@@ -43,5 +38,6 @@ public enum CustomizState
     Hair,
     Glasses,
     Cap,
-    Hands
+    Hands,
+    Preset
 }

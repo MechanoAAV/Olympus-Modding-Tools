@@ -73,9 +73,34 @@
   "CamType": 0,
   "AttackStateName": "beam",
   "Effects": null,
-  "Secondaries": [],
+  "Secondaries": [
+    {
+      "EffectsData": {
+        "Effects": {
+          "CanBoost": true,
+          "Boosts": [
+            {
+              "stat": 5,
+              "boost": 2
+            }
+          ],
+          "CanStatus": false,
+          "Status": [],
+          "CanField": false,
+          "Field": [],
+          "CanWeather": false,
+          "Weather": null
+        },
+        "name": "SecEffectSO_Acc",
+        "hideFlags": 0
+      },
+      "Chance": 100,
+      "CanTriggerOnAssist": true,
+      "Target": 1
+    }
+  ],
   "Accuracy": 100,
-  "Accurate": false,
+  "Accurate": true,
   "ModName": "aureole",
   "ModID": 3692493674,
   "IsCustom": false,

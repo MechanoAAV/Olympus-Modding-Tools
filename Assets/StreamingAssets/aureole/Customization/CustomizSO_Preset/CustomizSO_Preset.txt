@@ -1,12 +1,12 @@
 {
-  "State": 10,
+  "State": 12,
   "Options": [
     {
-      "TextureName": "cap_ramila"
+      "TextureName": "ui_ProfileRamila"
     }
   ],
   "ModName": "aureole",
   "ModID": 3692493674,
-  "name": "CustomizSO_Cap",
+  "name": "CustomizSO_Preset",
   "hideFlags": 0
 }

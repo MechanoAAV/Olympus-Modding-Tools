@@ -55,6 +55,7 @@ MonoBehaviour:
   - lightbeam
   AssistMoves:
   - {fileID: 0}
+  - {fileID: 0}
   LearnableMovesRef:
   - LightBeam
   - Tackle

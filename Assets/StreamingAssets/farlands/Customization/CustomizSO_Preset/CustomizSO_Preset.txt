@@ -1,0 +1,12 @@
+{
+  "State": 12,
+  "Options": [
+    {
+      "TextureName": "trnr_eric_icon"
+    }
+  ],
+  "ModName": "farlands",
+  "ModID": 3656797813,
+  "name": "CustomizSO_Preset",
+  "hideFlags": 0
+}

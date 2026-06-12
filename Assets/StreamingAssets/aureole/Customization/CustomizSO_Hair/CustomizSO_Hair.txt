@@ -1,1 +1,12 @@
-{"State":8}
+{
+  "State": 8,
+  "Options": [
+    {
+      "TextureName": "hair_ramila"
+    }
+  ],
+  "ModName": "aureole",
+  "ModID": 3692493674,
+  "name": "CustomizSO_Hair",
+  "hideFlags": 0
+}

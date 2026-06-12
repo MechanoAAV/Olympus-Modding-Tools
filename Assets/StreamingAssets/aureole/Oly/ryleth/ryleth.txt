@@ -56,11 +56,15 @@
   "BlessRes": 24,
   "Speed": 70,
   "AssistMovesRef": [
-    "motor"
+    "motor",
+    "lightbeam"
   ],
   "AssistMoves": [
     {
       "MoveName": "motor"
+    },
+    {
+      "MoveName": "lightbeam"
     }
   ],
   "LearnableMovesRef": [
