@@ -20,7 +20,18 @@ public abstract class AbilityBase : ModAsset
     /// How much an assist multiplies damage taken by the main unit
     /// </summary>
     [Range(0,2)]public float DamageMultiplier=1;
+    [Range(0, 5)] public float CriticalChanceMultiplier = 1;
+    [Range(0, 5)] public float CriticalChanceReceiveMultiplier = 1;
+    [Range(0, 100)] public float Recoil = 0;
+    public bool RecoilImmune = false;
     public bool SpikesImmune = false;
+    public bool RemoveSpikes = false;
+    public bool Mood = false;
+    [Header("Status Immunity")]
+    public PositionStatus ImmuneToPositionNerf;
+    public bool immuneAll;
+    public bool bounce;
+    public string[] _immuneToCondition;
     public override void PrintJson()
     {
         string path = Application.streamingAssetsPath + $"/{ModName.ToLower()}/Ability/{this.GetType().Name}/{name}.json";
