@@ -20,6 +20,8 @@ public abstract class AbilityBase : ModAsset
     /// How much an assist multiplies damage taken by the main unit
     /// </summary>
     [Range(0,2)]public float DamageMultiplier=1;
+    [Range(0, 5)] public float SGABMultiplier = 1;
+
     [Range(0, 5)] public float CriticalChanceMultiplier = 1;
     [Range(0, 5)] public float CriticalChanceReceiveMultiplier = 1;
     [Range(0, 100)] public float Recoil = 0;
