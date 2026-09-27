@@ -11,7 +11,7 @@ public enum GameMode
 {
     Light, Heavy, SuperHeavy, Free
 }
-[CreateAssetMenu(fileName = "Oly_", menuName = "Oly/Oly")]
+[CreateAssetMenu(fileName = "", menuName = "Oly/Oly")]
 public class OlySO : ModAsset
 {
     public int Index;

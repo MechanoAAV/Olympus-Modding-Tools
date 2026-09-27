@@ -1,4 +1,4 @@
-Shader "Shader Graphs/Lit"
+Shader "Oly/Lit"
 {
     Properties
     {
