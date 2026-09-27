@@ -12,6 +12,10 @@ public abstract class ModifierSO : ModAsset
     public bool OneUse = false;
     public Color Color;
     public bool SpikesImmune;
+    public bool FieldImmune;
+    public bool LockChosenMove;
+    public bool LockStatusMove;
+    public float RecoilAmount;
     public override void PrintJson()
     {
         string path = Application.streamingAssetsPath + $"/{ModName.ToLower()}/Modifier/{this.GetType().Name}/{name}.json";

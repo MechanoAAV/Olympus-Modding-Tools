@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-[CreateAssetMenu(fileName = "ModAfterHPPercent_", menuName = "Oly/Modifier/BoostOnHealthPercent")]
+[CreateAssetMenu(fileName = "PillAfterHPPercent_", menuName = "Oly/Pill/BoostOnHealthPercent")]
 public class ModifierAfterHealthPercent : ModifierSO
 {
     public StatBoost[] Boost;
