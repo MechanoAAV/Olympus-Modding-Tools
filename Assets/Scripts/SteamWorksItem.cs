@@ -271,7 +271,7 @@ class SteamWorksItemEditor : Editor
             string[] assetBundles = new string[]
             {
                 $"{_target.AssetBundleName.ToLower()}/move/move",
-                $"{_target.AssetBundleName.ToLower()}/unna/unna"
+                $"{_target.AssetBundleName.ToLower()}/oly/oly"
             };
             BuildAssetBundlesByName(assetBundles, assetBundleDirectory);
         }
