@@ -51,6 +51,8 @@ public class SteamManager : MonoBehaviour
     }
     public static void Destroy()
     {
+        if(Instance)
+        if(Instance.gameObject)
         DestroyImmediate(Instance.gameObject);
     }
 
