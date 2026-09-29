@@ -34,7 +34,7 @@ MonoBehaviour:
   - type: mythical
     Effective: 2
   Color: {r: 0.95687324, g: 0.878058, b: 0.21020256, a: 1}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: d3d3c1071738d2841a7071aaef503aeb, type: 3}
   GroundedImmunity: 0
   references:
     version: 2
