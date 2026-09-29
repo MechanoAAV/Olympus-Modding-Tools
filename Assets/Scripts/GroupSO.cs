@@ -7,30 +7,32 @@ using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Serialization;
 [System.Serializable]
-public struct TypeTableEntry
+public struct GroupTableEntry
 {
     public string type;
-    public float Multiplier;
+    public EffectiveState Effective;
 }
 [CreateAssetMenu(fileName = "Group_", menuName = "Oly/Group")]
 public class GroupSO : ModAsset
 {
     public LocalizedString Name;
     [Tooltip("If the attacker is...then the damage multiplier is...")]
-    public List<TypeTableEntry> IncomingAttackChart = new();
+    public List<GroupTableEntry> IncomingAttackChart = new();
+    public List<GroupTableEntry> AttackChart = new();
+
     public Color Color;
     public Sprite Icon;
     public bool GroundedImmunity;
     public override void PrintJson()
     {
-       string directory = $"{Application.streamingAssetsPath}/{ModName}/Group/{name}/";
-        string path = $"{directory}/{this.name}.txt";  
-        if (!Directory.Exists(directory))Directory.CreateDirectory(directory);
+        string directory = $"{Application.streamingAssetsPath}/{ModName}/Group/{name}/";
+        string path = $"{directory}/{this.name}.txt";
+        if (!Directory.Exists(directory)) Directory.CreateDirectory(directory);
         if (Icon)
         {
 
-        if (!File.Exists($"{directory}/{Name.GetLocalizedString()}_icon.png")) File.Create($"{directory}/{Name.GetLocalizedString()}_icon.png").Close();
-        File.WriteAllBytes($"{directory}/{Name.GetLocalizedString()}_icon.png", ImageConversion.EncodeToPNG(Icon.texture));
+            if (!File.Exists($"{directory}/{name}_icon.png")) File.Create($"{directory}/{name}_icon.png").Close();
+            File.WriteAllBytes($"{directory}/{name}_icon.png", ImageConversion.EncodeToPNG(Icon.texture));
         }
 
         var jsonValue = SerializeAsset();
@@ -48,4 +50,8 @@ public class GroupSO : ModAsset
         settings.Converters.Add(new LocalizedStringJsonConverter());
         return JsonConvert.SerializeObject(this, Formatting.Indented, settings);
     }
+}
+public enum EffectiveState
+{
+    Neutral, Resisted, Weak, SuperResisted, SuperWeak, Immune, None
 }

@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PillBalance_", menuName = "Oly/Pill/Generic")]
 public class ModifierBalance : ModifierSO
 {
-    public TypeTableEntry[] Boost;
+    public GroupTableEntry[] Boost;
 }

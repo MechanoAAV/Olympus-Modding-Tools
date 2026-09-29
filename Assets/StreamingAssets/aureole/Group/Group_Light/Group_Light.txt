@@ -16,21 +16,31 @@
   "IncomingAttackChart": [
     {
       "type": "foul",
-      "Multiplier": 0.0
+      "Effective": 1
     },
     {
       "type": "mythical",
-      "Multiplier": 0.5
+      "Effective": 1
+    }
+  ],
+  "AttackChart": [
+    {
+      "type": "foul",
+      "Effective": 2
+    },
+    {
+      "type": "mythical",
+      "Effective": 2
     }
   ],
   "Color": {
-    "r": 1.0,
-    "g": 0.926142454,
-    "b": 0.2951482,
+    "r": 0.956873238,
+    "g": 0.878058,
+    "b": 0.21020256,
     "a": 1.0
   },
   "Icon": {
-    "SpriteName": ""
+    "SpriteName": "ui_groupLight"
   },
   "GroundedImmunity": false,
   "ModName": "aureole",

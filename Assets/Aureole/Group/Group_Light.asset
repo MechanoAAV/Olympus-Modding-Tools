@@ -25,10 +25,15 @@ MonoBehaviour:
     m_LocalVariables: []
   IncomingAttackChart:
   - type: foul
-    Multiplier: 0
+    Effective: 1
   - type: mythical
-    Multiplier: 0.5
-  Color: {r: 1, g: 0.92614245, b: 0.2951482, a: 1}
+    Effective: 1
+  AttackChart:
+  - type: foul
+    Effective: 2
+  - type: mythical
+    Effective: 2
+  Color: {r: 0.95687324, g: 0.878058, b: 0.21020256, a: 1}
   Icon: {fileID: 0}
   GroundedImmunity: 0
   references:
