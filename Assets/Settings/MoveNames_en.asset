@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 28f152fc99e17944392d8732e49a4e06, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 7283969324430917698
   m_TableData:
   - m_Id: 32697442304
     m_Localized: Light Beam
@@ -26,6 +27,36 @@ MonoBehaviour:
     m_Localized: Creates a beam made of light and strikes the opponent.
     m_Metadata:
       m_Items: []
+  - m_Id: 95403968435924992
+    m_Localized: Takes {0}  turn(s) to fire.
+    m_Metadata:
+      m_Items:
+      - rid: 7283969324430917698
+  - m_Id: 95406433604546560
+    m_Localized: Blocks incoming moves and effects. Fails if used twice in a row.
+      Doesn't block field effects.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95407715845222400
+    m_Localized: Heals {}% of damage dealt.
+    m_Metadata:
+      m_Items:
+      - rid: 7283969324430917698
+  - m_Id: 95410172222582784
+    m_Localized: Attacks the opponent and bails out.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95410824621404160
+    m_Localized: Blows the opponent back to the team.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 7283969324430917698
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 95403968435924992
+        - id: 95407715845222400

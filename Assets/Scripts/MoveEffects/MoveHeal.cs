@@ -1,19 +1,16 @@
-using System.Collections;
 using UnityEngine;
-using UnityEngine.Localization;
 
 [CreateAssetMenu(fileName = "MoveHeal", menuName = "Oly/Move/MoveEffectors/Heal")]
 public class MoveHeal : MoveEffectBase
 {
     public bool recoverDamage;
-    [Range(1, 10)] public float _healPercent = 3;
+    [Range(1, 100)] public int _healPercent = 30;
     public GameObject _healFX;
     public bool UseDefaultEffect = true;
     [HideInInspector]
     public string _healFXRef;
     [HideInInspector]
     public string BundlePath;
-    public LocalizedString _healMessage;
     public override void PrintJson()
     {
         _healFXRef=_healFX.name;

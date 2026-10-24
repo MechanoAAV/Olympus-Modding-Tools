@@ -1,6 +1,4 @@
-using System.Collections;
 using UnityEngine;
-using UnityEngine.Localization;
 
 [CreateAssetMenu(fileName = "MoveCharged", menuName = "Oly/Move/MoveEffectors/Charged")]
 public class MoveCharged : MoveEffectBase
@@ -13,8 +11,6 @@ public class MoveCharged : MoveEffectBase
     [HideInInspector]
     public string BundlePath;
     public SecondaryEffect[] chargeEffect;
-    public LocalizedString _chargeMessage;
-    public LocalizedString _chargeFailMessage;
     public override void PrintJson()
     {
         _chargeFXRef=_chargeFX.name;

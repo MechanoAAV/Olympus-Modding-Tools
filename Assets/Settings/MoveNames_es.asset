@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: es
   m_SharedData: {fileID: 11400000, guid: 28f152fc99e17944392d8732e49a4e06, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 7283969324430917699
   m_TableData:
   - m_Id: 32697442304
     m_Localized: Rayo celestial
@@ -26,6 +27,36 @@ MonoBehaviour:
     m_Localized: Crea un rayo de luz y golpea al objetivo.
     m_Metadata:
       m_Items: []
+  - m_Id: 95403968435924992
+    m_Localized: Tarda {0} turno(s) en cargar.
+    m_Metadata:
+      m_Items:
+      - rid: 7283969324430917699
+  - m_Id: 95406433604546560
+    m_Localized: Bloquea los ataques del rival. Falla al usarlo dos veces seguidas.
+      No bloquea efectos al campo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95407715845222400
+    m_Localized: "Cura el {}% de da\xF1o infligido."
+    m_Metadata:
+      m_Items:
+      - rid: 7283969324430917699
+  - m_Id: 95410172222582784
+    m_Localized: Ataca al rival y vuelve al equipo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95410824621404160
+    m_Localized: Barre al enemigo de vuelta a su equipo.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 7283969324430917699
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 95403968435924992
+        - id: 95407715845222400

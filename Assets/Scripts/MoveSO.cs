@@ -107,6 +107,10 @@ public struct MoveEffects
     public StatusconditionSO[] Status;
     public bool CanField;
     public FieldconditionSO[] Field;
+    public bool CanRemoveField;
+    public FieldconditionSO[] FieldToRemove;
+    public bool CanRemoveStatus;
+    public StatusconditionSO[] StatusToRemove;
     public bool CanWeather;
     public FieldconditionSO Weather;
 }

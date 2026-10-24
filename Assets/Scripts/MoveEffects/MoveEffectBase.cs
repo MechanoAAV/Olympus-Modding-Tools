@@ -3,16 +3,18 @@ using System.Collections;
 using System.IO;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Localization;
 
-public abstract class MoveEffectBase : ScriptableObject
+public abstract class MoveEffectBase : ModAsset
 {
-    public string ModName = "mymod";
+    public LocalizedString Description;
     [SerializeField] float _moveAIValue = .5f;
     /// <summary>
     /// The initial value given by the ai. This determines how likely the ai is to use the move before applying modifiers
     /// </summary>
     public float MoveAIValue => _moveAIValue;
-    public virtual void PrintJson()
+    public bool Focus;
+    public override void PrintJson()
     {
         if (!Directory.Exists(Application.streamingAssetsPath + $"/{ModName}/Move/{name}"))
         {

@@ -23,6 +23,26 @@ MonoBehaviour:
     m_Key: Light_DescrLightBeam
     m_Metadata:
       m_Items: []
+  - m_Id: 95403968435924992
+    m_Key: Descr_ChargeMove
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95406433604546560
+    m_Key: Descr_Shield
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95407715845222400
+    m_Key: Descr_HealDrain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95410172222582784
+    m_Key: Descr_FoulPingPong
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95410824621404160
+    m_Key: Descr_FoulSweep
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

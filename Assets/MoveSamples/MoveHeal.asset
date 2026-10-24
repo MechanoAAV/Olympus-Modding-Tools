@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f709fee0d0363104abc6434b04e64312, type: 3}
+  m_Name: MoveHeal
+  m_EditorClassIdentifier: Assembly-CSharp::MoveHeal
+  ModName: mymod
+  ModID: 0
+  Description:
+    m_TableReference:
+      m_TableCollectionName: GUID:28f152fc99e17944392d8732e49a4e06
+    m_TableEntryReference:
+      m_KeyId: 95407715845222400
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _moveAIValue: 0.5
+  Focus: 0
+  recoverDamage: 0
+  _healPercent: 30
+  _healFX: {fileID: 0}
+  UseDefaultEffect: 1
+  _healFXRef: 
+  BundlePath: 
+  references:
+    version: 2
+    RefIds: []
