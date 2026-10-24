@@ -32,6 +32,7 @@ public class MoveSO : ModAsset
     public float RecoilAmount = 0;
     public bool Grounded = false;
     [Min(1)] public int UsagePoints = 10;
+    [Min(1)] public int UsagePointsAssist = 4;
     [Range(-10, 10)][SerializeField] int priority;
     [HideInInspector]
     public MoveEffectBase MoveEffect;
