@@ -27,7 +27,6 @@ public abstract class AbilityBase : ModAsset
     [Range(0, 100)] public float Recoil = 0;
     public bool RecoilImmune = false;
     public bool SpikesImmune = false;
-    public bool RemoveSpikes = false;
     public bool Mood = false;
     [Header("Status Immunity")]
     public PositionStatus ImmuneToPositionNerf;

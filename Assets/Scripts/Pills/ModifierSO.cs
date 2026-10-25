@@ -7,7 +7,6 @@ using UnityEngine.Localization;
 public abstract class ModifierSO : ModAsset
 {
     public LocalizedString Name;
-    public LocalizedString Description;
     public float DamageModifer=1;
     public bool OneUse = false;
     public Color Color;

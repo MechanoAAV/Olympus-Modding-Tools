@@ -4,5 +4,5 @@ public class ModifierAfterHealthPercent : ModifierSO
 {
     public StatBoost[] Boost;
     public StatBoost[] DefaultNerf;
-    [Range(0, 1)] public float percent;
+    [Range(0, 100)] public int percent;
 }

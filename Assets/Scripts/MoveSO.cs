@@ -128,6 +128,7 @@ public enum FieldID
 public struct StatBoost
 {
     public Stat stat;
+    [Range(-6,6)]
     public int boost;
     public StatBoost(Stat stat, int boost)
     {

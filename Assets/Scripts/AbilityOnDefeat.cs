@@ -13,8 +13,10 @@ public struct AbilityDefeatEffect
     public AbilityDefeatEffectID Condition;
     public MoveTarget target;
     public MoveEffects boost;
+    [Range(0, 100)]
+    public int DamageAmountPercentage;
 }
 public enum AbilityDefeatEffectID
 {
-    Status, Damage, Clear
+    Status, Damage, Clear, SpikesRemove, DisableItem
 }
