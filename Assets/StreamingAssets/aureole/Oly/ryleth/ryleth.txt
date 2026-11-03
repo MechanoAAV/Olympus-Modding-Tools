@@ -68,21 +68,21 @@
     }
   ],
   "LearnableMovesRef": [
-    "LightBeam",
-    "Tackle",
-    "Stomp",
+    "lightbeam",
+    "tackle",
+    "stomp",
     "dash",
     "screech"
   ],
   "LearnableMoves": [
     {
-      "MoveName": "LightBeam"
+      "MoveName": "lightbeam"
     },
     {
-      "MoveName": "Tackle"
+      "MoveName": "tackle"
     },
     {
-      "MoveName": "Stomp"
+      "MoveName": "stomp"
     },
     {
       "MoveName": "dash"
@@ -107,9 +107,9 @@
         4
       ],
       "UnnaPresetMoves": [
-        "Tackle",
-        "LightBeam",
-        "Stomp"
+        "dash",
+        "lightbeam",
+        "stomp"
       ]
     }
   ],

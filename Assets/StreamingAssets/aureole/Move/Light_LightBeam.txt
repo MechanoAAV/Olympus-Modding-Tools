@@ -40,14 +40,15 @@
     "TypeName": "light"
   },
   "GroupRef": "light",
-  "Power": 60.0,
-  "BlessPower": 90.0,
+  "Power": 60,
+  "BlessPower": 90,
   "HitTimes": 1,
   "CriticalChance": 1.0,
   "Contact": false,
   "RecoilAmount": 0.0,
   "Grounded": false,
   "UsagePoints": 10,
+  "UsagePointsAssist": 4,
   "MoveEffect": {
     "MoveEffectBaseName": "normal"
   },
@@ -88,6 +89,10 @@
           "Status": [],
           "CanField": false,
           "Field": [],
+          "CanRemoveField": false,
+          "FieldToRemove": [],
+          "CanRemoveStatus": false,
+          "StatusToRemove": [],
           "CanWeather": false,
           "Weather": null
         },

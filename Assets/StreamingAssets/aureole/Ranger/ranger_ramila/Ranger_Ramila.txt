@@ -1,1 +1,28 @@
-{"Name":{"TableReference":"RangerNames","Key":"Ramila","LocalizData":[{"Locale":"en","Value":"Ramila"},{"Locale":"es","Value":"Ramila"}]},"SubName":"Ramila","Card":{"SpriteName":""},"CardSelection":0,"Portrait":{"SpriteName":"ui_ProfileRamila"},"ModName":"aureole","ModID":3692493674,"name":"Ranger_Ramila","hideFlags":0}
+{
+  "Name": {
+    "TableReference": "RangerNames",
+    "Key": "Ramila",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "Ramila"
+      },
+      {
+        "Locale": "es",
+        "Value": "Ramila"
+      }
+    ]
+  },
+  "SubName": "Ramila",
+  "Card": {
+    "SpriteName": ""
+  },
+  "CardSelection": 0,
+  "Portrait": {
+    "SpriteName": "ui_ProfileRamila"
+  },
+  "ModName": "aureole",
+  "ModID": 3692493674,
+  "name": "Ranger_Ramila",
+  "hideFlags": 0
+}

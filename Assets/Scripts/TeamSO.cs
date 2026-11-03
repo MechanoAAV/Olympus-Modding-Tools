@@ -15,8 +15,8 @@ public class TeamSO : ModAsset
     public TeamTypes Type;
     public GameMode Category;
     public RangerSO Owner;
+    public OpponentAISO AI;
     [HideInInspector]
-    public OpponentAISO AI; 
     public string AIRef; 
     public List<UnnaSaveData> team;
    
@@ -29,6 +29,7 @@ public class TeamSO : ModAsset
         var settings = new JsonSerializerSettings();
         settings.Converters.Add(new UnnaSaveDataJsonConverter());
         settings.Converters.Add(new RangerSOJsonConverter());
+        settings.Converters.Add(new AISOJsonConverter());
         var jsonValue = JsonConvert.SerializeObject(this, Formatting.Indented, settings);
         Debug.Log(jsonValue);
         if (!Directory.Exists($"{Application.streamingAssetsPath}/{ModName}/Team"))

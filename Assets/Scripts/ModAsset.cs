@@ -480,13 +480,29 @@ public class LocalizedStringJsonConverter : JsonConverter<LocalizedString>
             obj.WriteTo(writer);
         }
     }
+    public sealed class AISOJsonConverter : JsonConverter<OpponentAISO>
+    {
+        public override void WriteJson(JsonWriter writer, OpponentAISO value, JsonSerializer serializer)
+        {
+            JObject obj = new JObject
+            (
+                new JProperty("AIName", value ? value.name : string.Empty)
+            );
+            obj.WriteTo(writer);
+        }
+        public override OpponentAISO ReadJson(JsonReader reader, Type objectType, OpponentAISO existingValue, bool hasExistingValue, JsonSerializer serializer)
+        {
+            JObject obj = JObject.Load(reader);
+            return null;
+        }
+    }
     public sealed class RangerSOJsonConverter : JsonConverter<RangerSO>
     {
         public override void WriteJson(JsonWriter writer, RangerSO value, JsonSerializer serializer)
         {
             JObject obj = new JObject
             (
-                new JProperty("TrainerName", value ? value.name : string.Empty)
+                new JProperty("RangerName", value ? value.name : string.Empty)
             );
             obj.WriteTo(writer);
         }

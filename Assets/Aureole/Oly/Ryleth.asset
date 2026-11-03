@@ -57,9 +57,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   LearnableMovesRef:
-  - LightBeam
-  - Tackle
-  - Stomp
+  - lightbeam
+  - tackle
+  - stomp
   - dash
   - screech
   LearnableMoves:
@@ -76,9 +76,9 @@ MonoBehaviour:
       ability: 0
       assist: 0
       learntMoves:
-      - Tackle
-      - LightBeam
-      - Stomp
+      - dash
+      - lightbeam
+      - stomp
       StatReinforcement:
       - stat: 7
         boost: 2

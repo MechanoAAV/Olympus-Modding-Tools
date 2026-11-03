@@ -23,8 +23,8 @@ public class MoveSO : ModAsset
     [HideInInspector]
     public GroupSO Group;
     public string GroupRef;
-    public float Power = 20;
-    [Range(0, 100)] public float BlessPower;
+    public int Power = 20;
+    [Range(0, 100)] public int BlessPower;
     [Range(0, 5)] public int HitTimes = 1;
     [Min(0)] public float CriticalChance = 1;
     public bool Contact;

@@ -47,6 +47,7 @@ MonoBehaviour:
   RecoilAmount: 0
   Grounded: 0
   UsagePoints: 10
+  UsagePointsAssist: 4
   priority: 0
   MoveEffect: {fileID: 0}
   MoveEffectRef: normal

@@ -68,7 +68,9 @@ MonoBehaviour:
   - telekinesis
   - overheat
   - froststream
+  - stab
   LearnableMoves:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

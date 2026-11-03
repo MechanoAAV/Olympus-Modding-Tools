@@ -84,7 +84,8 @@
     "grassblade",
     "telekinesis",
     "overheat",
-    "froststream"
+    "froststream",
+    "stab"
   ],
   "LearnableMoves": [
     {
@@ -101,6 +102,9 @@
     },
     {
       "MoveName": "froststream"
+    },
+    {
+      "MoveName": "stab"
     }
   ],
   "Presets": [

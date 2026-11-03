@@ -1,0 +1,10 @@
+{
+  "_canSwitchOut": true,
+  "_canAssist": true,
+  "_canPredict": false,
+  "_smartSwitchOnFaint": true,
+  "ModName": "aureole",
+  "ModID": 3692493674,
+  "name": "AI_Ramila",
+  "hideFlags": 0
+}

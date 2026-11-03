@@ -2,9 +2,11 @@
   "Type": 4,
   "Category": 0,
   "Owner": {
-    "TrainerName": "Ranger_Ramila"
+    "RangerName": "Ranger_Ramila"
   },
-  "AI": null,
+  "AI": {
+    "AIName": "AI_Ramila"
+  },
   "AIRef": "",
   "team": [
     {
@@ -13,14 +15,18 @@
       "UnnaSaveAbility": 0,
       "UnnaSaveAssist": 0,
       "UnnaSaveStats": [
+        2,
+        4,
+        2,
         0,
         0,
-        0,
-        0,
-        0,
-        0
+        2
       ],
-      "UnnaSaveMoves": []
+      "UnnaSaveMoves": [
+        "punch",
+        "earthcrash",
+        "impose"
+      ]
     },
     {
       "UnnaSaveName": "koddish",
@@ -28,14 +34,18 @@
       "UnnaSaveAbility": 0,
       "UnnaSaveAssist": 0,
       "UnnaSaveStats": [
+        2,
+        2,
+        4,
         0,
         0,
-        0,
-        0,
-        0,
-        0
+        2
       ],
-      "UnnaSaveMoves": []
+      "UnnaSaveMoves": [
+        "drain",
+        "saw",
+        "surprise"
+      ]
     },
     {
       "UnnaSaveName": "liwalker",
@@ -43,14 +53,18 @@
       "UnnaSaveAbility": 0,
       "UnnaSaveAssist": 0,
       "UnnaSaveStats": [
+        2,
+        3,
+        3,
         0,
         0,
-        0,
-        0,
-        0,
-        0
+        2
       ],
-      "UnnaSaveMoves": []
+      "UnnaSaveMoves": [
+        "metalstrike",
+        "fireball",
+        "earthcrash"
+      ]
     },
     {
       "UnnaSaveName": "ryleth",
@@ -74,6 +88,6 @@
   ],
   "ModName": "aureole",
   "ModID": 3692493674,
-  "name": "Light__Ranger_Ramila",
+  "name": "Light_AI_Ramila (MasterAI)_Ranger_Ramila",
   "hideFlags": 0
 }

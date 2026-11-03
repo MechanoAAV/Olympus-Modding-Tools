@@ -10,34 +10,67 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0bd05b287aca84c4b878b070304d490b, type: 3}
-  m_Name: Light__Ranger_Ramila
+  m_Name: Light_AI_Ramila (MasterAI)_Ranger_Ramila
   m_EditorClassIdentifier: Assembly-CSharp::TeamSO
   ModName: aureole
   ModID: 3692493674
   Type: 4
   Category: 0
   Owner: {fileID: 11400000, guid: 414ade441d6f8ab4c9ee36fde13f3b05, type: 2}
-  AI: {fileID: 0}
+  AI: {fileID: 11400000, guid: 90e744043eef83d4b8e5ddd242dbbf9b, type: 2}
   AIRef: 
   team:
   - name: boxyglorm
     modifier: fastbp
     ability: 0
     assist: 0
-    learntMoves: []
-    StatReinforcement: []
+    learntMoves:
+    - punch
+    - earthcrash
+    - impose
+    StatReinforcement:
+    - stat: 7
+      boost: 2
+    - stat: 0
+      boost: 4
+    - stat: 2
+      boost: 2
+    - stat: 3
+      boost: 2
   - name: koddish
     modifier: rocky
     ability: 0
     assist: 0
-    learntMoves: []
-    StatReinforcement: []
+    learntMoves:
+    - drain
+    - saw
+    - surprise
+    StatReinforcement:
+    - stat: 7
+      boost: 2
+    - stat: 0
+      boost: 2
+    - stat: 2
+      boost: 4
+    - stat: 3
+      boost: 2
   - name: liwalker
     modifier: floaties
     ability: 0
     assist: 0
-    learntMoves: []
-    StatReinforcement: []
+    learntMoves:
+    - metalstrike
+    - fireball
+    - earthcrash
+    StatReinforcement:
+    - stat: 7
+      boost: 2
+    - stat: 0
+      boost: 3
+    - stat: 2
+      boost: 3
+    - stat: 3
+      boost: 2
   - name: ryleth
     modifier: hardA
     ability: 0

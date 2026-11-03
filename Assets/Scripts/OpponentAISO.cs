@@ -1,8 +1,7 @@
-using System.Collections.Generic;
-using System.Linq;
+using Newtonsoft.Json;
+using System.IO;
 using UnityEngine;
-
-[CreateAssetMenu(fileName = "OpponentAI", menuName = "Level/OpponentAI")]
 public class OpponentAISO : ModAsset
 {
+
 }

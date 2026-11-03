@@ -19,7 +19,10 @@ public class RangerSO : ModAsset
     public override void PrintJson()
     {
         string path = $"{Application.streamingAssetsPath}/{ModName}/Ranger/{name}/{name}.txt";
-        var settings = new JsonSerializerSettings();
+        var settings = new JsonSerializerSettings
+        {
+            Formatting = Formatting.Indented
+        };
         settings.Converters.Add(new LocalizedStringJsonConverter());
         settings.Converters.Add(new SpriteRefJsonConverter());
         var jsonValue = JsonConvert.SerializeObject(this, settings);
