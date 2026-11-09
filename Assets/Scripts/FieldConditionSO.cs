@@ -15,6 +15,7 @@ public class FieldconditionSO : ModAsset
     public GameObject Prefab;
     public Vector3 Offset;
     public Sprite Icon;
+    public LocalizedString Name;
     public LocalizedString OnStartMessage;
     public LocalizedString OnCureMessage;
     public LocalizedString OnHurtMessage;
@@ -75,6 +76,7 @@ public class FieldconditionSO : ModAsset
             Directory.CreateDirectory(Application.streamingAssetsPath + $"/{ModName}/Field/{name.ToLower()}");
         if (!File.Exists(path))
             File.Create(path).Dispose();
+        File.WriteAllBytes(Application.streamingAssetsPath + $"/{ModName}/Field/{name.ToLower()}/{name.ToLower()}_icon.png", ImageConversion.EncodeToPNG(Icon.texture));
 
         File.WriteAllText(path, SerializeAsset());
     }

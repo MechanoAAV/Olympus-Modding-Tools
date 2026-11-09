@@ -11,7 +11,21 @@
     "z": 0.0
   },
   "Icon": {
-    "SpriteName": ""
+    "SpriteName": "field_dark"
+  },
+  "Name": {
+    "TableReference": "Status",
+    "Key": "Night_Name",
+    "LocalizData": [
+      {
+        "Locale": "en",
+        "Value": "Night Time"
+      },
+      {
+        "Locale": "es",
+        "Value": "Noche"
+      }
+    ]
   },
   "OnStartMessage": {
     "TableReference": "BattleMessages",
@@ -47,8 +61,8 @@
     "Key": "",
     "LocalizData": []
   },
-  "TurnDuration": 0,
-  "MinTurnDuration": 0,
+  "TurnDuration": -1,
+  "MinTurnDuration": -1,
   "Stackable": 0,
   "HealOpponentAmount": [],
   "PreventStatusMoves": false,
@@ -81,6 +95,10 @@
     "Status": [],
     "CanField": false,
     "Field": [],
+    "CanRemoveField": false,
+    "FieldToRemove": [],
+    "CanRemoveStatus": false,
+    "StatusToRemove": [],
     "CanWeather": false,
     "Weather": null
   },
